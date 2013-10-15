@@ -58,7 +58,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	 
 	
 // @region namespaceDeclaration// @startlock
-	var button6 = {};	// @button
+	var imageButton1 = {};	// @buttonImage
 	var d1codcoec = {};	// @textField
 	var search_d1codfis = {};	// @textField
 	var search_d1genmail = {};	// @textField
@@ -97,9 +97,8 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 // eventHandlers// @lock
 
-	button6.click = function button6_click (event)// @startlock
+	imageButton1.click = function imageButton1_click (event)// @startlock
 	{// @endlock
-
 		$$("tabView3").selectTab(3);
 		$$('component3').loadComponent({path: '/Webcomponent/Ricerca_Funzioni.waComponent', userData:  { 'dati':data.userData,'modalita': "lettura" }});
 	};// @lock
@@ -1030,18 +1029,14 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 			Rpc2.testconnessione();
  		}
 		catch(e) { // in case of error
-    		var scelta=window.confirm("Db non trovato! vuole cambiare i dati di connessione?");
-			if (scelta){
-				//window.location.replace("/configurazione.waPage/index.html");
-				
-				document.location.href = "/configurazione.waPage/index.html";
-			}
+    		alert("Db non trovato! vuole cambiare i dati di connessione?");
+    		document.location.href = "/Default.waPage/index.html";
  		}
  	}
 
    
 // @region eventManager// @startlock
-	WAF.addListener("button6", "click", button6.click, "WAF");
+	WAF.addListener("imageButton1", "click", imageButton1.click, "WAF");
 	WAF.addListener("search_d1codfis", "keydown", search_d1codfis.keydown, "WAF");
 	WAF.addListener("search_d1genctre", "keydown", search_d1genctre.keydown, "WAF");
 	WAF.addListener("search_d1gencogn", "keydown", search_d1gencogn.keydown, "WAF");

@@ -144,13 +144,8 @@ function constructor (id) {
 			$$("tabView3").selectTab(2);
 			$$('component3').removeComponent();
 		}else{
-			//console.log($$('frame1'));
-			//if($$(getHtmlId('frame1'))!= undefined){
-				//$$('frame1').setValue("/Default.waPage/index.html");
-			//}else{
-				//alert("da implementare");
+			
 				document.location.href = "/Default.waPage/index.html";
-			//}
 		}
 		
 		
