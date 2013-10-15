@@ -34,6 +34,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	{// @endlock
 		console.log("a"+$$('d1codazie').getValue());
 		if($$('d1codazie').getValue()== ""){
+					$$("tabView1").selectTab(1);
 					$$('d1codazie').focus();
 					alert("inserisci id azienda");
 					console.log("azienda vuota");

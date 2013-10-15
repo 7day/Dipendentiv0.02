@@ -593,3 +593,51 @@
 2013-10-15 16:55:15 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project closed
 2013-10-15 16:55:15 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project closed
 2013-10-15 16:55:16 [com.wakanda-software.7 Day] INFO - "7 Day" solution closed
+2013-10-15 17:05:31 [com.wakanda-software.7 Day] INFO - Users and groups directory opened
+2013-10-15 17:05:31 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - Datastore opened
+2013-10-15 17:05:31 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project opened
+2013-10-15 17:05:31 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project opened
+2013-10-15 17:05:31 [com.wakanda-software.7 Day] INFO - "7 Day" solution opened
+2013-10-15 17:05:31 [com.wakanda-software] INFO - Starts "7 Day" solution
+2013-10-15 17:05:31 [com.wakanda-software.7 Day.ServerAdmin] INFO - HTTP Server started
+2013-10-15 17:05:31 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project started
+2013-10-15 17:05:31 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - HTTP Server started
+2013-10-15 17:05:31 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project started
+2013-10-15 17:05:31 [com.wakanda-software.7 Day.ServerAdmin] INFO - Executes the bootstrap file(s)
+2013-10-15 17:05:31 [com.wakanda-software.7 Day.ServerAdmin] INFO - Bootstrap file(s) executed
+2013-10-15 17:05:31 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - Executes the bootstrap file(s)
+2013-10-15 17:05:31 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - Bootstrap file(s) executed
+2013-10-15 17:05:31 [com.wakanda-software.7 Day] INFO - "7 Day" solution started
+2013-10-15 17:05:31 [com.wakanda-software] INFO - "7 Day" solution has been successfully opened for running (duration: 840 ms)
+2013-10-15 17:08:55 [com.wakanda-software] INFO - Stops "7 Day" solution
+2013-10-15 17:08:56 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project stopped
+2013-10-15 17:08:57 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project stopped
+2013-10-15 17:08:57 [com.wakanda-software.7 Day] INFO - "7 Day" solution stopped
+2013-10-15 17:08:57 [com.wakanda-software] INFO - Closes "7 Day" solution
+2013-10-15 17:08:58 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project closed
+2013-10-15 17:08:58 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project closed
+2013-10-15 17:08:58 [com.wakanda-software.7 Day] INFO - "7 Day" solution closed
+2013-10-15 17:09:15 [com.wakanda-software.7 Day] INFO - Users and groups directory opened
+2013-10-15 17:09:15 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - Datastore opened
+2013-10-15 17:09:15 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project opened
+2013-10-15 17:09:15 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project opened
+2013-10-15 17:09:15 [com.wakanda-software.7 Day] INFO - "7 Day" solution opened
+2013-10-15 17:09:15 [com.wakanda-software] INFO - Starts "7 Day" solution
+2013-10-15 17:09:16 [com.wakanda-software.7 Day.ServerAdmin] INFO - HTTP Server started
+2013-10-15 17:09:16 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project started
+2013-10-15 17:09:17 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - HTTP Server started
+2013-10-15 17:09:17 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project started
+2013-10-15 17:09:17 [com.wakanda-software.7 Day.ServerAdmin] INFO - Executes the bootstrap file(s)
+2013-10-15 17:09:17 [com.wakanda-software.7 Day.ServerAdmin] INFO - Bootstrap file(s) executed
+2013-10-15 17:09:17 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - Executes the bootstrap file(s)
+2013-10-15 17:09:17 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - Bootstrap file(s) executed
+2013-10-15 17:09:17 [com.wakanda-software.7 Day] INFO - "7 Day" solution started
+2013-10-15 17:09:17 [com.wakanda-software] INFO - "7 Day" solution has been successfully opened for running (duration: 1872 ms)
+2013-10-15 17:09:41 [com.wakanda-software] INFO - Stops "7 Day" solution
+2013-10-15 17:09:42 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project stopped
+2013-10-15 17:09:43 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project stopped
+2013-10-15 17:09:43 [com.wakanda-software.7 Day] INFO - "7 Day" solution stopped
+2013-10-15 17:09:43 [com.wakanda-software] INFO - Closes "7 Day" solution
+2013-10-15 17:09:44 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project closed
+2013-10-15 17:09:44 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project closed
+2013-10-15 17:09:44 [com.wakanda-software.7 Day] INFO - "7 Day" solution closed
