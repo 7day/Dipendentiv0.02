@@ -1335,3 +1335,64 @@
 2013-10-15 23:51:29 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project closed
 2013-10-15 23:51:29 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project closed
 2013-10-15 23:51:30 [com.wakanda-software.7 Day] INFO - "7 Day" solution closed
+2013-10-16 00:02:40 [com.wakanda-software] INFO - Opens the solution "C:\Users\Valerio\Documents\GitHub\Dipendentiv0.02\Anagrafe-D0\Anagrafe-D0 Solution\7 Day.waSolution" for running
+2013-10-16 00:02:40 [com.wakanda-software.7 Day] INFO - Users and groups directory opened
+2013-10-16 00:02:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - Datastore opened
+2013-10-16 00:02:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project opened
+2013-10-16 00:02:40 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project opened
+2013-10-16 00:02:40 [com.wakanda-software.7 Day] INFO - "7 Day" solution opened
+2013-10-16 00:02:40 [com.wakanda-software] INFO - Starts "7 Day" solution
+2013-10-16 00:02:41 [com.wakanda-software.7 Day.ServerAdmin] INFO - HTTP Server started
+2013-10-16 00:02:41 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project started
+2013-10-16 00:02:41 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - HTTP Server started
+2013-10-16 00:02:41 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project started
+2013-10-16 00:02:41 [com.wakanda-software.7 Day.ServerAdmin] INFO - Executes the bootstrap file(s)
+2013-10-16 00:02:41 [com.wakanda-software.7 Day.ServerAdmin] INFO - Bootstrap file(s) executed
+2013-10-16 00:02:41 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - Executes the bootstrap file(s)
+2013-10-16 00:02:41 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - Bootstrap file(s) executed
+2013-10-16 00:02:41 [com.wakanda-software.7 Day] INFO - "7 Day" solution started
+2013-10-16 00:02:41 [com.wakanda-software] INFO - "7 Day" solution has been successfully opened for running (duration: 808 ms)
+2013-10-16 00:05:06 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-16 00:05:06 [com.wakanda-software.7 Day.Valutazioni-D1.console] INFO - {"data":["connetti a "]}
+2013-10-16 00:05:06 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-16 00:05:06 [com.wakanda-software.7 Day.Valutazioni-D1.console] INFO - {"data":[{"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}]}
+2013-10-16 00:05:06 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codfunz,d1desfubr,d1desfudl,d1gennote FROM d1anagfunz
+2013-10-16 00:05:06 [com.wakanda-software.7 Day.Valutazioni-D1.console] INFO - {"data":["SELECT d1codfunz,d1desfubr,d1desfudl,d1gennote FROM d1anagfunz"]}
+2013-10-16 00:05:06 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codrepa,d1desrebr,d1desredl,d1codrege,d1gennote FROM d1anagrepa
+2013-10-16 00:05:06 [com.wakanda-software.7 Day.Valutazioni-D1.console] INFO - {"data":["SELECT d1codrepa,d1desrebr,d1desredl,d1codrege,d1gennote FROM d1anagrepa"]}
+2013-10-16 00:05:06 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codrala,d1desrabr,d1desradl,d1gennote FROM d1anagrala
+2013-10-16 00:05:06 [com.wakanda-software.7 Day.Valutazioni-D1.console] INFO - {"data":["SELECT d1codrala,d1desrabr,d1desradl,d1gennote FROM d1anagrala"]}
+2013-10-16 00:05:06 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codstgi,d1desstbr,d1desstdl,d1gennote FROM d1anagstgi
+2013-10-16 00:05:06 [com.wakanda-software.7 Day.Valutazioni-D1.console] INFO - {"data":["SELECT d1codstgi,d1desstbr,d1desstdl,d1gennote FROM d1anagstgi"]}
+2013-10-16 00:05:18 [com.wakanda-software] INFO - Stops "7 Day" solution
+2013-10-16 00:05:18 [com.wakanda-software.srvr] ERROR - [42] SSL read failed, task #3700, task name is Reused spare process
+2013-10-16 00:05:18 [com.wakanda-software.srvr] ERROR - [1] Read failed, task #3700, task name is Reused spare process
+2013-10-16 00:05:19 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project stopped
+2013-10-16 00:05:20 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project stopped
+2013-10-16 00:05:20 [com.wakanda-software.7 Day] INFO - "7 Day" solution stopped
+2013-10-16 00:05:20 [com.wakanda-software] INFO - Closes "7 Day" solution
+2013-10-16 00:05:20 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project closed
+2013-10-16 00:05:20 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project closed
+2013-10-16 00:05:21 [com.wakanda-software.7 Day] INFO - "7 Day" solution closed
+2013-10-16 00:11:28 [com.wakanda-software] INFO - Opens the solution "C:\Users\Valerio\Documents\GitHub\Dipendentiv0.02\Anagrafe-D0\Anagrafe-D0 Solution\7 Day.waSolution" for running
+2013-10-16 00:11:28 [com.wakanda-software.7 Day] INFO - Users and groups directory opened
+2013-10-16 00:11:28 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - Datastore opened
+2013-10-16 00:11:28 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project opened
+2013-10-16 00:11:28 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project opened
+2013-10-16 00:11:28 [com.wakanda-software.7 Day] INFO - "7 Day" solution opened
+2013-10-16 00:11:28 [com.wakanda-software] INFO - Starts "7 Day" solution
+2013-10-16 00:11:29 [com.wakanda-software.7 Day.ServerAdmin] INFO - HTTP Server started
+2013-10-16 00:11:29 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project started
+2013-10-16 00:11:29 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - HTTP Server started
+2013-10-16 00:11:29 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project started
+2013-10-16 00:11:29 [com.wakanda-software.7 Day.ServerAdmin] INFO - Executes the bootstrap file(s)
+2013-10-16 00:11:29 [com.wakanda-software.7 Day.ServerAdmin] INFO - Bootstrap file(s) executed
+2013-10-16 00:11:29 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - Executes the bootstrap file(s)
+2013-10-16 00:11:29 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - Bootstrap file(s) executed
+2013-10-16 00:11:29 [com.wakanda-software.7 Day] INFO - "7 Day" solution started
+2013-10-16 00:11:29 [com.wakanda-software] INFO - "7 Day" solution has been successfully opened for running (duration: 757 ms)
+2013-10-16 00:13:49 [com.wakanda-software] INFO - Stops "7 Day" solution
+2013-10-16 00:13:49 [com.wakanda-software.srvr] ERROR - [42] SSL read failed, task #3268, task name is Reused spare process
+2013-10-16 00:13:49 [com.wakanda-software.srvr] ERROR - [1] Read failed, task #3268, task name is Reused spare process
+2013-10-16 00:13:50 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project stopped
+2013-10-16 00:13:51 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project stopped
