@@ -1,6 +1,6 @@
 ﻿
 WAF.onAfterInit = function onAfterInit() {// @lock
-var tabella='d1anagdipe';
+
 // @region namespaceDeclaration// @startlock
 	var documentEvent = {};	// @document
 // @endregion// @endlock

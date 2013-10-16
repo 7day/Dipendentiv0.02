@@ -6,9 +6,6 @@ exports.insert = function(connectionParams,tabella,d1codazie,d1codmatr,d1gencogn
    		var connection= dbconn.connect(connectionParams);
 				
 		console.log("dati inviati al modulo rpc"+d1codazie,d1codmatr,d1gencogn,d1gennome,d1gensess,d1datnasc,d1codfis,d1genctre,d1geninre,d1gencpre,d1genprre,d1genfrre,d1genpres,d1genmail,d1datassu,d1datcess,d1codrepa,d1codrege,d1codfunz,d1codstgi,d1codrala,d1codcoec,d1codinec,d1codvar1,d1codvar2,d1codvar3);
-		/*if (tabella=='d1anagdipe'){
-			dbquery = 'CALL prg_InsertAnagDipe(' + '"' +CDAZIE  + '"' +','  + '"' + CDMATR + '"' +',' + '"' +COGNOME+'"' +',' + '"' +NOME+'"' +',' + '"' +SESSO+'"' +',' + '"' +DTNASC+'"' +',' + '"' +CODFIS+'"' +',' + '"' +CITTARES+'"' +',' + '"' +INDIRRES+'"' +',' + '"' +CAPRES + '"' +',' + '"' +PROVRES+'"' +',' + '"' +FRAZIONERES+'"' +',' + '"' +PRESSORES+'"' +',' + '"' +EMAIL+'"' +',' + '"' +DTASSU+'"' +',' + '"' +DTDIMI+'"' +',' + '"' +CDDISL+'"' +',' + '"' +CDMANS+'"' +',' + '"' +CDSTAG+'"' +',' + '"' +CDRAPL+'"' +')';
-		}*/
 		
 		if (tabella=='d1anagmatr'){
 			
@@ -134,8 +131,6 @@ exports.insert = function(connectionParams,tabella,d1codazie,d1codmatr,d1gencogn
 			}
 			dbquery='INSERT INTO d1anagmatr (d1codazie,d1codmatr,d1gencogn,d1gennome,d1gensess,d1datnasc,d1codfis,d1genctre,d1geninre,d1gencpre,d1genprre,d1genfrre,d1genpres,d1genmail,d1datassu,d1datcess,d1codrepa,d1codrege,d1codfunz,d1codstgi,d1codrala,d1codcoec,d1codinec,d1codvar1,d1codvar2,d1codvar3)';		
 			dbquery+='VALUES ('+d1codazie+','+d1codmatr +',' +campi+')';
-			//dbquery = 'CALL prg_InsertAnagMatr(' +d1codazie+','+d1codmatr +',' +campi+')';
-			//dbquery = 'CALL prg_InsertAnagMatr(' + '"' +d1codazie + '"' +',' + '"' + d1codmatr + '"' +',' + '"' +d1gencogn+'"' +',' + '"' +d1gennome+'"' +',' + '"' +d1gensess+'"' +',' + '"' +d1datnasc+'"' +',' + '"' +d1codfis+'"' +',' + '"' +d1genctre+'"' +',' + '"' +d1geninre+'"' +',' + '"' +d1gencpre + '"' +',' + '"' +d1genprre+'"' +',' + '"' +d1genfrre+'"' +',' + '"' +d1genpres+'"' +',' + '"' +d1genmail+'"' +',' + '"' +d1datassu+'"' +',' + '"' +d1datcess+'"' +',' + '"' +d1codrepa+'"' +',' + '"' +d1codrege+'"' +',' +'"' +d1codfunz+'"' +',' + '"' +d1codstgi+'"' +',' + '"' +d1codrala+'"'+',' + '"' +d1codcoec+'"'+',' + '"' +d1codinec+'"'+',' + '"' +d1codvar1+'"'+',' + '"' +d1codvar2+'"'+',' + '"' +d1codvar3+'"' +')';
 			console.log(dbquery);
 			console.log(campi);
 		}
@@ -159,8 +154,6 @@ exports.insert = function(connectionParams,tabella,d1codazie,d1codmatr,d1gencogn
 			}
 	
 			dbquery = 'INSERT INTO d1anagfunz(d1codfunz,d1desfubr,d1desfudl,d1gennote) VALUES ('+d1codazie+','+campi+')';
-			//dbquery = 'INSERT INTO d1anagfunz(d1codfunz,d1desfubr,d1desfudl,d1gennote) VALUES ('+d1codazie +','+'"' + d1codmatr +'"' +',' + '"' +d1gencogn+'"' +',' + '"' +d1gennome+'"'+')';
-			
 		}
 		 
 		console.log(dbquery);
@@ -368,8 +361,7 @@ exports.del = function(connectionParams,tabella,id,id2)
 		}
 		
 		if (tabella=='d1anagmatr'){
-			var dbquery='DELETE FROM d1anagmatr WHERE(d1codmatr='+id2+' AND d1codazie='+id+')';
-			//var dbquery='CALL prg_DeleteAnagMatr('+id+','+id2+')';				
+			var dbquery='DELETE FROM d1anagmatr WHERE(d1codmatr='+id2+' AND d1codazie='+id+')';				
 		}
 		
 		if (tabella=='d1anagfunz'){
@@ -484,12 +476,8 @@ exports.del = function(connectionParams,tabella,id,id2)
 			}else{
 				result=result+':'+res.getColumnType(i);
 			}
-			
-			
-			//console.log(result);
 		}
-		//result=res.getColumnName(0);
-		//console.log(result);
+		connection.close();
 		return result;
 		
  } 
@@ -507,9 +495,6 @@ exports.del = function(connectionParams,tabella,id,id2)
    
    	console.log(connectionParams,tabella,campo0,campo1,campo2,campo3,campo4,campodata0,valore0,valore1,valore2,valore3,valore4,valoredata0);
    	
-   	//inserire for per i campi
-        //SELECT * FROM d1anagdipe WHERE (COGNOME LIKE "%p%" or "%p" or "p%") AND (NOME LIKE "%a%" or "%a" or "a%");
-		//dbquery='SELECT * FROM d1anagdipe WHERE '+campo+' LIKE '+'"'+"%"+ valore+"%"+'"' +'OR'+'"'+"%"+ valore+'"'+'"'+valore+"%"+'"';
 	if (tabella=='d1anagmatr'){
 		
 				
@@ -547,28 +532,7 @@ exports.del = function(connectionParams,tabella,id,id2)
 				dbquery+=' OR ('+campo1+' LIKE '+'"'+"%"+campo3+"%"+'"'+'OR'+'"'+"%"+campo3+'"'+'OR'+'"'+campo3+"%"+'"'+')';
 			}
 		}
-		/*dbquery+=' AND ('+campo2+' LIKE '+'"'+"%"+valore2+"%"+'"'+'OR'+'"'+"%"+valore2+'"'+'OR'+'"'+valore2+"%"+'"'+')';
-		dbquery+=' AND ('+campo3+' LIKE '+'"'+"%"+valore3+"%"+'"'+'OR'+'"'+"%"+valore3+'"'+'OR'+'"'+valore3+"%"+'"'+')';
-		dbquery+=' AND ('+campo4+' LIKE '+'"'+"%"+valore4+"%"+'"'+'OR'+'"'+"%"+valore4+'"'+'OR'+'"'+valore4+"%"+'"'+')';*/
 	}	
-		
-		
-		
-		
-		
-		/*for (i=0;i<4;i++){
-			if(window['valore'+i]!=''){
-				if (c==0){
-					dbquery+=' WHERE ('+window['campo'+i]+' LIKE '+'"'+"%"+ +window['valore'+i]+"%"+'"' +'OR'+'"'+"%"+window['valore'+i]+'"'+'"'+window['valore'+i]+"%"+'"'+')';
-					c++;
-					console.log("primo"+dbquery);
-				}else{
-				dbquery+=' AND ('+window['campo'+i]+' LIKE '+'"'+"%"+ +window['valore'+i]+"%"+'"' +'OR'+'"'+"%"+window['valore'+i]+'"'+'"'+window['valore'+i]+"%"+'"'+')';
-				console.log("successivi"+dbquery);
-				}
-			}
-		}*/
-		
 		console.log(dbquery);
 		res = connection.execute(dbquery);
 		result=res.getAllRows();
@@ -601,45 +565,6 @@ exports.del = function(connectionParams,tabella,id,id2)
 	}
 
  } 
-
- 
-/*exports.ChangeParams = function(d1codazie,d1genrags,d1genindi,d1gencitt,d1genprov,d1gencap,d1gentel,d1genfax,d1genema1,d1genema2,d1genema3,d1genhost,d1genuser,d1genpass,d1gendb,d1genport,d1genssl,d1desvar1,d1desvar2,d1desvar3)
-{
-	
-	//console.log(d1codazie.length,d1genrags.length,d1genindi.length,d1gencitt.length,d1genprov.length,d1gencap.length,d1gentel.length,d1genfax.length,d1genema1.length,d1genema2.length,d1genema3.length,d1genhost.length,d1genuser.length,d1genpass.length,d1gendb.length,d1genport.length,d1genssl.length,d1desvar1.length,d1desvar2.length,d1desvar3.length);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-	console.log(d1codazie,d1genrags,d1genindi,d1gencitt,d1genprov,d1gencap,d1gentel,d1genfax,d1genema1,d1genema2,d1genema3,d1genhost,d1genuser,d1genpass,d1gendb,d1genport,d1genssl,d1desvar1,d1desvar2,d1desvar3);
- 	
- 	if (d1genssl==0){
- 		d1genssl=false;
- 	}
- 	if (d1genssl==1){
- 		d1genssl=true;
- 	}
- 	 		
- 	
- 	 this.connectionParams = {
-	        hostname: d1genhost,
-	        port: d1genport,
-	        user: d1genuser,
-	        password: d1genpass,
-	     	database: d1gendb,
-	        charSet: 192,
-	        ssl: d1genssl
-	    };
- 
- 	console.log("connetti a ");
-	console.log(connectionParams);
- } */
- 	
-	   	/* var connectionParams = {
-	        hostname: 'localhost',
-	        port: 3306,
-	        user: 'root',
-	        password: 'Salsiccia',
-	     	database: 'D1Valutazioni',
-	        charSet: 192,
-	        ssl: false
-	    };*/
  
  exports.connetti = function()
 {
@@ -668,7 +593,6 @@ exports.del = function(connectionParams,tabella,id,id2)
 		console.log(connectionParams);
 		
 		 return connectionParams;
-		 //return true;
  } 
  
  exports.testconnessione = function()
@@ -692,19 +616,9 @@ d1genssl=ds.Parametri.first().d1genssl;
 		        charSet: 192,
 		        ssl: d1genssl	
 	     };
-	  /*var connectionParams = {
-	        hostname: 'localhost',
-	        port: 3306,
-	        user: 'root',
-	        password: 'Salsiccia',
-	     	database: 'D1Valutazioni',
-	        charSet: 192,
-	        ssl: false
-	    };*/
+	  
 	     
 	var connection= dbconn.connect(connectionParams);
-	//dbconn.close();
 	return connection.isConnected;
-	
-	 //return false;
+		
 }

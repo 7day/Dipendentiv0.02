@@ -26,7 +26,6 @@ function constructor (id) {
 	}else{
 		$$(getHtmlId('Eli_mans')).hide();
 	}
-	//console.log(data.userData.myValue);
 	
 	// @region namespaceDeclaration// @startlock
 	var Drop_Dati = {};	// @buttonImage
@@ -45,8 +44,7 @@ function constructor (id) {
 		$$(getHtmlId('Eli_mans')).hide();
 		$$('component1').removeComponent();
 		$$("tabView3").selectTab(1);
-		//$$("tabView3").selectTab(3);
-		
+	
 	};// @lock
 
 	Eli_mans.click = function Eli_mans_click (event)// @startlock
@@ -96,16 +94,7 @@ function constructor (id) {
 		}
 	};// @lock
 
-	/*$("#component1_d1desfudl").keypress(function (e)
-     {
-     //if the letter is not char then display error and don't type anything
-     if( e.which>=32 && (e.which<48 || e.which>57))
-     {
-	     return true;
-	  }else{
-	  	   return false;
-	  }
-     });*/
+
 	d1desfudl.focus = function d1desfudl_focus (event)// @startlock
 	{// @endlock
 		chkIndDescBlur(this);
@@ -116,16 +105,7 @@ function constructor (id) {
 		chkIndDescBlur(this);
 		
 	};// @lock
-	/*$("#component1_d1gennote").keypress(function (e)
-     {
-     //if the letter is not char then display error and don't type anything
-     if( e.which>=32 && (e.which<48 || e.which>57))
-     {
-	     return true;
-	  }else{
-	  	   return false;
-	  }
-     });*/
+	
 
 	d1gennote.focus = function d1gennote_focus (event)// @startlock
 	{// @endlock
@@ -139,17 +119,6 @@ function constructor (id) {
 		
 	};// @lock
 	
-	/*$("#component1_d1desfubr").keypress(function (e)
-     {
-     //if the letter is not char then display error and don't type anything
-     if( e.which>=32 && (e.which<48 || e.which>57))
-     {
-	     return true;
-	  }else{
-	  	   return false;
-	  }
-     });*/
-
 	d1desfubr.focus = function d1desfubr_focus (event)// @startlock
 	{// @endlock
 		chkIndDescBlur(this);
@@ -161,11 +130,6 @@ function constructor (id) {
 
 	};// @lock
 	
-	
-	/*console.log(data.userData.dati);
-	console.log(data.userData.modalita);
-	console.log(data.userData.search_id);
-	console.log(data.userData.search_desc);*/
 	
 	if (data.userData.modalita=='update'){
 	
@@ -188,7 +152,7 @@ function constructor (id) {
 	
 	ConfermaDati.click = function ConfermaDati_click (event)// @startlock
 	{// @endlock
-		//var arr_key;
+		
 		if ($$(getHtmlId('d1desfubr')).getValue()!='' && $$(getHtmlId('d1codfunz')).getValue()!=''){
 			console.log("dati inviati alle stored"+$$(getHtmlId('d1codfunz')).getValue(),$$(getHtmlId('d1desfubr')).getValue(),$$(getHtmlId('d1desfudl')).getValue(),$$(getHtmlId('d1gennote')).getValue());
 			var connectionParams = Rpc2.connetti();
@@ -201,9 +165,8 @@ function constructor (id) {
 		                   $$("tabView3").selectTab(1);
 		                },  
 		                'onError': function (error) {
-		                	
-		                	CheckDB();
-		                   alert('operazione non riusciuta ')
+							CheckDB();
+		                   	alert('operazione non riusciuta ')
 		                    console.log("errore");
 		                },  
 		                'params': [connectionParams,'d1anagfunz',$$(getHtmlId('d1codfunz')).getValue(),$$(getHtmlId('d1desfubr')).getValue(),$$(getHtmlId('d1desfudl')).getValue(),$$(getHtmlId('d1gennote')).getValue(),0,0,0,0,0,0,0,0]
@@ -222,9 +185,9 @@ function constructor (id) {
 		                'onError': function (error) {
 		                	CheckDB();
 		                   alert('operazione insert non riusciuta ');
-		                    /*console.log("errore dati inseriti non corretti");*/
+		                    
 		               		console.log($$(getHtmlId('d1desfubr')).getValue());
-					//  if($$(getHtmlId('d1codfunz')).getValue()==  ){
+					
 		                    var scelt=window.confirm("l'elemento è gia presente vuoi aggiornarlo?");
 		                    	if (scelt){
 		                    		
@@ -243,36 +206,15 @@ function constructor (id) {
 						             	});
 						             	
 						             }
-	 					   //console.log($$(getHtmlId('d1codfunz')).getValue());
 	 					   
-		                    /*arr_key= Rpc2.findbykey({
-		                		'onSuccess': function (result) {
-		                 		 console.log("ok");
-		               		 	},  
-		               			 'onError': function (error) {
-		                   			alert('findbykey errore ');
-		                   		 	
-		                		},  
-		                		'params': [connectionParams,'d1anagfunz','d1codfunz',$$(getHtmlId('d1codfunz')).getValue()]
-		             			});
-		             			console.log(arr_key.d1codfunz);*/
-		                 
-		                    	
-		                    	
-		                    
 		                  },  
 		                'params': [connectionParams,'d1anagfunz',$$(getHtmlId('d1codfunz')).getValue(),$$(getHtmlId('d1desfubr')).getValue(),$$(getHtmlId('d1desfudl')).getValue(),$$(getHtmlId('d1gennote')).getValue(),0,0,0,0,0,0,0,0]
 		             });
 		        
 		   
 			}	
-
-			
-			//$$("tabView3").selectTab(3);
 			$$(getHtmlId('Eli_mans')).hide();
 			Refresh_Ricerca("anagrafica");
-			//$$('component3').Ricerca_Mans("anagrafica");
-			//$$('component3_search_d1desfubr').setValue("pippo");
 		}else{
 			alert("inserisci i campi obbligatori");	
 		}
@@ -298,7 +240,6 @@ function constructor (id) {
 	
 	
 	function Refresh_Ricerca(tipo){
-		//console.log($$(getHtmlId('search_d1codfunz')).id);
 		if (tipo=="anagrafica"){
 			
 			if ($$('component3_search_d1codfunz').getValue()=='' || $$('component3_search_d1desfubr').getValue()==''){
@@ -309,8 +250,6 @@ function constructor (id) {
 				}
 			if ($$('component3_search_d1codfunz').getValue()!='' || $$('component3_search_d1desfubr').getValue()!='' && isNaN($$('component3_search_d1desfubr').getValue()[0]) /*|| $$('search_d1genmail').getValue()!='' || $$('search_d1genctre').getValue()!='' || $$('search_d1codfis').getValue()!=''||$$('search_d1datnasc').getValue()!=''*/){
 				var connectionParams= Rpc2.connetti();
-				//console.log($$(getHtmlId('search_d1codfunz')).getValue());
-				//console.log($$(getHtmlId('search_d1desfubr')).getValue());
 				mansioni3 = Rpc2.search(connectionParams,'d1anagfunz','d1codfunz','d1desfubr',$$('component3_search_d1codfunz').getValue(),$$('component3_search_d1desfubr').getValue(),0,0,0,0,0,0,0,0);
 				sources.mansioni3.sync();
 				}
@@ -323,12 +262,8 @@ function CheckDB(){
 			Rpc2.testconnessione();
  		}
 		catch(e) { // in case of error
-    		var scelta=window.confirm("Db non trovato! vuole cambiare i dati di connessione?");
-			if (scelta){
-				//window.location.replace("/configurazione.waPage/index.html");
-				
-				document.location.href = "/configurazione.waPage/index.html";
-			}
+    		alert("impostare i dati della connessione al database nel menu settings");
+    		document.location.href = "/Default.waPage/index.html";
  		}
  	}
 }// @startlock

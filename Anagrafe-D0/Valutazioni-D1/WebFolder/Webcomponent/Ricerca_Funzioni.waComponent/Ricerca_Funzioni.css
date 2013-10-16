@@ -3,61 +3,6 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}img4 {
-	 z-index: 0;
-	 width: 0px;
-	 height: 0px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}img3 {
-	 z-index: 0;
-	 width: 0px;
-	 height: 0px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}img2 {
-	 z-index: 0;
-	 width: 0px;
-	 height: 0px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}img1 {
-	 z-index: 0;
-	 width: 0px;
-	 height: 0px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}img {
-	 z-index: 0;
-	 width: 0px;
-	 height: 0px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
 #{id} {
 	 background-color: transparent;
 	 
@@ -77,7 +22,7 @@
 	 width: 40px;
 	 height: 40px;
 	 top: 53px;
-	 left: 952px;
+	 left: 949px;
 	
 	 position: absolute;
 	 border-top-color: transparent;
@@ -156,8 +101,8 @@
 #{id}Search_Anag {
 	 width: 40px;
 	 height: 40px;
-	 top: 12px;
-	 left: 510px;
+	 top: 20px;
+	 left: 590px;
 	
 	 position: absolute;
 	 border-top-color: transparent;
@@ -189,22 +134,26 @@
 }
 
 #{id}label3 {
-	 width: 65px;
+	 width: 100px;
 	 height: 15px;
 	 top: 23.5px;
-	 left: 196px;
+	 left: 280px;
 	
 	 position: absolute;
+	 min-width: 100px;
+	 max-width: 100px;
 	 
 }
 
 #{id}label2 {
-	 width: 12px;
+	 width: 100px;
 	 height: 15px;
 	 top: 23.5px;
-	 left: 29px;
+	 left: 11px;
 	
 	 position: absolute;
+	 min-width: 100px;
+	 max-width: 100px;
 	 
 }
 
@@ -215,14 +164,14 @@
 	 right: 5px;
 	
 	 position: absolute;
-	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIwIiB5Mj0iMTAwJSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZmZmZiIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIxIiAvPjxzdG9wIHN0b3AtY29sb3I9IiNmZmZmZmYiIG9mZnNldD0iMTAwJSIgc3RvcC1vcGFjaXR5PSIwIiAvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN3YWYtaWUtZ3JhZGllbnQpIiAvPjwvc3ZnPg==");
-	 background-image:-webkit-gradient(linear,0% 0%, 0% 100%,color-stop(0, rgb(255,255,255)),color-stop(1, rgba(255,255,255,0)));
-	 background-image:-webkit-linear-gradient(top, rgb(255,255,255) 0%,rgba(255,255,255,0) 100%);
-	 background-image:-moz-linear-gradient(top, rgb(255,255,255) 0%,rgba(255,255,255,0) 100%);
-	 background-image:-ms-linear-gradient(top, rgb(255,255,255) 0%,rgba(255,255,255,0) 100%);
-	 background-image:-o-linear-gradient(top, rgb(255,255,255) 0%,rgba(255,255,255,0) 100%);
-	 background-image:linear-gradient(top, rgb(255,255,255) 0%,rgba(255,255,255,0) 100%);
 	 background-color: transparent;
+	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIwIiB5Mj0iMTAwJSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZmZmZiIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIxIiAvPjxzdG9wIHN0b3AtY29sb3I9IiNmZmZmZmYiIG9mZnNldD0iMTAwJSIgc3RvcC1vcGFjaXR5PSIwIiAvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN3YWYtaWUtZ3JhZGllbnQpIiAvPjwvc3ZnPg==");
+	 background-image:-webkit-gradient(linear,0% 0%, 0% 100%,color-stop(0, rgb(255, 255, 255)),color-stop(1, rgba(255, 255, 255, 0)));
+	 background-image:-webkit-linear-gradient(top, rgb(255, 255, 255) 0%,rgba(255, 255, 255, 0) 100%);
+	 background-image:-moz-linear-gradient(top, rgb(255, 255, 255) 0%,rgba(255, 255, 255, 0) 100%);
+	 background-image:-ms-linear-gradient(top, rgb(255, 255, 255) 0%,rgba(255, 255, 255, 0) 100%);
+	 background-image:-o-linear-gradient(top, rgb(255, 255, 255) 0%,rgba(255, 255, 255, 0) 100%);
+	 background-image:linear-gradient(top, rgb(255, 255, 255) 0%,rgba(255, 255, 255, 0) 100%);
 	 
 }
 
@@ -261,17 +210,17 @@
 	 height: 23px;
 	 top: 5px;
 	 left: 5px;
-	 right: 495px;
+	 right: 570px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}tabView2 {
-	 width: 500px;
-	 height: 100px;
+	 width: 575px;
+	 height: 94px;
 	 top: -20px;
-	 left: 10px;
+	 left: 16px;
 	
 	 position: absolute;
 	 
@@ -279,7 +228,7 @@
 
 #{id}dataGrid1 {
 	 width: 979px;
-	 height: 512px;
+	 height: 476px;
 	 top: 93px;
 	 left: 14px;
 	
@@ -291,7 +240,7 @@
 	 width: 130px;
 	 height: 22px;
 	 top: 20px;
-	 left: 266px;
+	 left: 385px;
 	
 	 position: absolute;
 	 
@@ -301,7 +250,7 @@
 	 width: 130px;
 	 height: 22px;
 	 top: 20px;
-	 left: 46px;
+	 left: 116px;
 	
 	 position: absolute;
 	 

@@ -38,10 +38,8 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	 	campi_date[2]='d1datassu';
 	 	
 	var campi_mansioni = new Array();
-		//campi_mansioni[0]='d1codfunz';
 	 	campi_mansioni[0]='d1desfubr';
-	 	//campi_mansioni[2]='dlmans';
-	 	//campi_mansioni[3]='note';	
+	 
 	
 	var campi_rapplavoro = new Array();
 	 	campi_rapplavoro[0]='d1desrabr';
@@ -51,13 +49,10 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	 
 	var campi_statusgiur = new Array();
 	 	campi_statusgiur[0]='d1desstbr';
-	 		
-	var lun_arr=campi.length;
-	var lun_datearr=campi_date.length;
-	var lun_mans=campi_mansioni.length;
-	 
+	 		 
 	
 // @region namespaceDeclaration// @startlock
+	var Drop_Dati = {};	// @buttonImage
 	var imageButton1 = {};	// @buttonImage
 	var d1codcoec = {};	// @textField
 	var search_d1codfis = {};	// @textField
@@ -84,9 +79,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	var Apri_Insert = {};	// @buttonImage
 	var d1datcess = {};	// @textField
 	var d1codazie = {};	// @textField
-	var d1gensess = {};	// @textField
 	var search_d1datnasc = {};	// @textField
-	var Drop_Dati = {};	// @buttonImage
 	var documentEvent = {};	// @document
 	var ConfermaDati = {};	// @buttonImage
 	var Back = {};	// @buttonImage
@@ -96,6 +89,13 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 // @endregion// @endlock
 
 // eventHandlers// @lock
+
+	Drop_Dati.click = function Drop_Dati_click (event)// @startlock
+	{// @endlock
+		toggle_avvisocancel=0;
+		$$("tabView3").selectTab(1);
+		ResetCampi();
+	};// @lock
 
 	imageButton1.click = function imageButton1_click (event)// @startlock
 	{// @endlock
@@ -381,8 +381,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	d1datnasc.blur = function d1datnasc_blur (event)// @startlock
 	{// @endlock
-		/*console.log(isDateField(this));
-		isDateField(this);*/
 		checkDateOnBlur(this);
 	};// @lock
 
@@ -410,7 +408,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		 $$('d1codmatr').hide();
 		 toggle_avvisocancel=0;
 		 $$("tabView3").selectTab(2);
-		 Popola_Griglia(sel_elem,lun_arr);
+		 Popola_Griglia(sel_elem);
 	};// @lock
 
 	Apri_Insert.click = function Apri_Insert_click (event)// @startlock
@@ -438,8 +436,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		}
 		if($$('search_d1codfis').getValue()!=''){
 			$$('d1codfis').setValue($$('search_d1codfis').getValue());
-		}	
-		//$$('d1datcess').setValue("31/12/3000");	
+		}		
 	};// @lock
 
 	d1datcess.focus = function d1datcess_focus (event)// @startlock
@@ -466,16 +463,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	  	   return true;
 	  }
      });
-
-	d1gensess.blur = function d1gensess_blur (event)// @startlock
-	{// @endlock
-		
-		if (this.getValue()!="M" && this.getValue()!="F" && this.getValue()!="m" && this.getValue()!="f" && this.getValue()!=""){
-			alert("questo campo accetta solo M o F");
-			this.setValue("");
-			this.focus(true);
-		}
-	};// @lock
 	$("#d1gensess").keypress(function (e)
      {
      //if the letter is not char then display error and don't type anything
@@ -507,13 +494,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		
 	};// @lock
 
-	Drop_Dati.click = function Drop_Dati_click (event)// @startlock
-	{// @endlock
-		toggle_avvisocancel=0;
-		$$("tabView3").selectTab(1);
-		ResetCampi();
-	};// @lock
-
 	documentEvent.onLoad = function documentEvent_onLoad (event)// @startlock
 	{// @endlock
 		
@@ -526,72 +506,25 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 		
 		var connectionParams= Rpc2.connetti();
-		/*Rpc2.LetturaDb({
-		                'onSuccess': function (result) {
-		                   console.log("ok");
-		                },  
-		                'onError': function (error) {
-		                   var scelta=window.confirm("Db non trovato verificare dati connessione?");
-							if (scelta){
-								window.location.replace("/configurazione.waPage/index.html");
-							}
-		                },  
-		                'params': [connectionParams,tabella]
-		             });*/
-		
-		
-		//var stringnomi=Rpc2.NomeCampiDb(connectionParams,tabella);
-		//var nom_tip=stringnomi.split('-');
-		
-		
-	/*	//creazione array copia esatta del db
-		 
-		WAF.dataSource.create({
-            'id' : 'anagrafe2', // datasource name
-            'binding' : 'anagrafe2', //target JavaScript variable name (same name is recommended)
-            'data-source-type': 'array', //type for array datasources
-            'data-attributes': window[nom_tip[0]]
-            	
-            //'data-attributes': 'name:string,age:number,job:string' //declare attributes
-        }).sync();*/
-		
-		/*anagrafe = Rpc2.LetturaDb(connectionParams,tabella);
-		StrToDate();
-		sources.anagrafe.sync();*/
-		//console.log(anagrafe);
-		
-		/*anagrafe2 = Rpc2.LetturaDb(connectionParams,tabella);
-		StrToDate2();
-		sources.anagrafe2.sync();
-		console.log("anagrafe2");
-		console.log(anagrafe2[0].d1datassu);
-		console.log(anagrafe[0].d1datassu);
-		//console.log(sources.anagrafe2.getAttributeNames());*/
-		
-		
+			
 
 		mansioni = Rpc2.LetturaDb(connectionParams,'d1anagfunz');
-		//console.log(mansioni);
 		sources.mansioni.sync();
 		
 		dislocazione = Rpc2.LetturaDb(connectionParams,'d1anagrepa');
-		//console.log(dislocazione);
 		sources.dislocazione.sync();
 		
 		rapplavoro = Rpc2.LetturaDb(connectionParams,'d1anagrala');
-		//console.log(rapplavoro);
 		sources.rapplavoro.sync();
 		
 		statusgiur= Rpc2.LetturaDb(connectionParams,'d1anagstgi');
-		//console.log(statusgiur);
 		sources.statusgiur.sync();
 	};// @lock
 
 	ConfermaDati.click = function ConfermaDati_click (event)// @startlock
 	{// @endlock
-		Prel_DatiInseriti(lun_arr,lun_datearr);
-		/*console.log("date")
-		console.log(compareDate(P_d1datnasc,P_d1datassu));*/
+		Prel_DatiInseriti();
+		
 		if (P_d1codazie!='' && P_d1codmatr!='' && P_d1gencogn!='' && P_d1gennome!='' && P_d1gensess!='' && P_d1datnasc!='' && P_d1codfis!='' && P_d1datassu!=''){
 			
 			if(CheckDate()){
@@ -600,16 +533,13 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				//porta stringhe date da dd/mm/yy a yy/mm/dd
 				P_d1datnasc=Conv_DataPerDb(P_d1datnasc,"/");
 				P_d1datassu=Conv_DataPerDb(P_d1datassu,"/");
-				console.log(P_d1datcess);
 				if (P_d1datcess==''){
-					//P_d1datcess="3000-12-31";
 					P_d1datcess="";
 				}else{
 					P_d1datcess=Conv_DataPerDb(P_d1datcess,"/");
 					
 				}
 					
-				
 				console.log("dati inviati alle stored"+P_d1codazie,P_d1codmatr,P_d1gencogn,P_d1gennome,P_d1gensess,P_d1datnasc,P_d1codfis,P_d1genctre,P_d1geninre,P_d1gencpre,P_d1genprre,P_d1genfrre,P_d1genpres,P_d1genmail,P_d1datassu,P_d1datcess,P_d1codrepa,P_d1codrege,P_d1codfunz,P_d1codstgi,P_d1codrala,P_d1codcoec,P_d1codinec,P_d1codvar1,P_d1codvar2,P_d1codvar3);
 					
 				var connectionParams = Rpc2.connetti();
@@ -651,9 +581,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				           
 				        console.log("risultato");
 				}  
-					
-				  		
-				//ResetCampi(); 		
+					 		
 				Ricerca("anagrafica");
 				StrToDate();
 				sources.anagrafe.sync();
@@ -683,8 +611,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		if (scelta){
 			var id=sources.anagrafe.getCurrentElement().d1codazie;
 			var id2=sources.anagrafe.getCurrentElement().d1codmatr;
-			//console.log(id);
-			//console.log(id2);
 			var connectionParams= Rpc2.connetti();
 			
 			anagrafe= Rpc2.delAsync({
@@ -702,8 +628,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 			Ricerca("anagrafica");	
 			
 		}	
-			
-		//$$('ModuloCancella').displayDialog( );
 	};// @lock
 
 	Search_Anag.click = function Search_Anag_click (event)// @startlock
@@ -739,21 +663,14 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 					}
 					if (i==2){
 						var DTconv=DTconv[2]+'-'+DTconv[1]+'-'+DTconv[0];		
-					}
-					
-					console.log(i);			
-					console.log("Data convertita"+DTconv);
+					}					
+						console.log(i);			
+						console.log("Data convertita"+DTconv);
 					}
 					anagrafe = Rpc2.search(connectionParams,tabella,'d1gencogn','d1gennome','d1genmail','d1genctre','d1codfis','d1datnasc',$$('search_d1gencogn').getValue(),$$('search_d1gennome').getValue(),$$('search_d1genmail').getValue(),$$('search_d1genctre').getValue(),$$('search_d1codfis').getValue(),DTconv);
 					StrToDate();
 					sources.anagrafe.sync();
-					
-					console.log(sources.anagrafe);
-					console.log(sources.anagrafe.getPosition());
-					sources.anagrafe.select(-1);
-					/*sources.anagrafe._private.currentElemPos=-2;
-					console.log(sources.anagrafe._private.currentElemPos);*/
-					
+					sources.anagrafe.select(-1);				
 					
 				}else{
 					if (toggle_avvisocancel==0){
@@ -768,26 +685,14 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	function ResetCampi(){
 		Set_Dati(campi,'setValue',"");
 		Set_Dati(campi_date,'clear',"");
-		
 		Set_Dati(campi_mansioni,'setValue'," ");
 		Set_Dati(campi_statusgiur,'setValue'," ");
 		Set_Dati(campi_rapplavoro,'setValue'," ");
 		Set_Dati(campi_dislocazione,'setValue'," ");
-		/*$$('d1desfubr').sourceAtt.setValue(0);
-		$$('d1desrabr').sourceAtt.setValue(0);
-		$$('d1desstbr').sourceAtt.setValue(0);
-		$$('d1desrebr').sourceAtt.setValue(0);*/
-		
-		//console.log($$('d1desfubr').sourceAtt.getValue());	
-		//$('#d1desfubr').data('mansioni.d1desfubr').value("asdf");
-
 	}
 	
 	function StrToDate(){
-    	var lun_ana=anagrafe.length;
-		for (i=0;i<lun_ana;i++){
-			//console.log("data"+anagrafe[0].d1datcess);
-			
+		for (i=0;i<anagrafe.length;i++){
 			anagrafe[i].d1datnasc=new Date(anagrafe[i].d1datnasc);
 			anagrafe[i].d1datassu=new Date(anagrafe[i].d1datassu);
 			if (anagrafe[i].d1datcess == null){
@@ -800,15 +705,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		}
   	 }
   	
-  	 /*function StrToDate2(){
-    	var lun_ana=anagrafe2.length;
-		for (i=0;i<lun_ana;i++){
-			anagrafe2[i].d1datnasc=new Date(anagrafe2[i].d1datnasc);
-			anagrafe2[i].d1datassu=new Date(anagrafe2[i].d1datassu);
-			anagrafe2[i].d1datcess=new Date(anagrafe2[i].d1datcess);
-		}
-  	 }/*/
-  	 
+  	  	 
   	 function DateToStr(Data,Divisore,Modo){
   	 	
   	 	var dtconv;
@@ -833,39 +730,27 @@ WAF.onAfterInit = function onAfterInit() {// @lock
   	 }
   	 
   	 function Set_Dati(campi,oper,string){
-  		//campi=array di widget,oper=operazione da svolgere(setValue,getValue,clear,ecc) string = valore da impostare
 		var target = oper;
-		var lun_arr=campi.length;
-		for (i=0;i<lun_arr;i++){
+		for (i=0;i<campi.length;i++){
 			$$(campi[i])[target](string);
 		}
 	  }	 
 		
-     function Popola_Griglia(sel_elem,lung_arr){
+     function Popola_Griglia(sel_elem){
 		//fa il corrispettivo di questo: $$('d1codazie').setValue(sel_elem.d1codazie);
 		var target = 'setValue';
 		
-		for (i=0;i<lung_arr;i++){
+		for (i=0;i<campi.length;i++){
 			var nome_camparr=campi[i];
 			$$(campi[i])[target](sel_elem[nome_camparr]);
 		}
-		for (i=0;i<lun_datearr;i++){
-			//var nome_camparr=campi_date[i].toUpperCase();
+		for (i=0;i<campi_date.length;i++){
 			var nome_camparr=campi_date[i];
 			if (sel_elem[nome_camparr]!= null){
-				//console.log(sel_elem[nome_camparr]);
-				$$(campi_date[i])[target](DateToStr(sel_elem[nome_camparr],'/','ddmmyy'));
+					$$(campi_date[i])[target](DateToStr(sel_elem[nome_camparr],'/','ddmmyy'));
 			}
 		}
-		
-		
-		console.log(sel_elem.d1codfunz);
-		console.log(sel_elem.d1codrala);
-		console.log(sel_elem.d1codstgi);
-		console.log(sel_elem.d1codrepa);
-		
-		//console.log(sel_elem.d1desfubr);
-		
+				
 		for (i=0;i<mansioni.length;i++){	
 			if(sel_elem.d1codfunz==mansioni[i].d1codfunz){
 				$$('d1desfubr').setValue(mansioni[i].d1desfubr);
@@ -890,11 +775,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 			}
 		}
 		
-		/*$$('d1desfubr').sourceAtt.setValue(sel_elem.d1codfunz);
-		$$('d1desrabr').sourceAtt.setValue(sel_elem.d1codrala);
-		$$('d1desstbr').sourceAtt.setValue(sel_elem.d1codstgi);
-		$$('d1desrebr').sourceAtt.setValue(sel_elem.d1codrepa);*/
-		 
 		console.log(sel_elem.d1codfunz);
 		console.log(sel_elem.d1codrala);
 		console.log(sel_elem.d1codstgi);
@@ -903,48 +783,33 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		
   	 }
   	
-	 function Prel_DatiInseriti(lung_arr,datelun_arr){
+	 function Prel_DatiInseriti(){
 	    //preleva i dati inseriti in input della maschera dettagli P_d1codazie=$$('d1codazie').getValue();
 	 	var oper = 'getValue';
 	
-	 	for (i=0;i<lung_arr;i++){
+	 	for (i=0;i<campi.length;i++){
 	 		
-			//var rep=replaceApici($$(campi[i])[oper](),"'");
-			window['P_'+campi[i]/*.toUpperCase()*/]=$$(campi[i])[oper]();
-			//window['P_'+campi[i]/*.toUpperCase()*/]=rep;
-			//console.log(rep);	
 			
+			window['P_'+campi[i]]=$$(campi[i])[oper]();
+						
 			if (i>5){
 				if ($$(campi[i])[oper]()==''){
-					//console.log(campi[i]+"campo vuoto");
-					window['P_'+campi[i].toUpperCase()]=' ';	
+					window['P_'+campi[i]]=' ';	
 				}		
 			}
 		}
 	 
-		for (i=0;i<datelun_arr;i++){
+		for (i=0;i<campi_date.length;i++){
 			console.log($$(campi_date[i])[oper]());
-			window['P_'+campi_date[i]/*.toUpperCase()*/]=$$(campi_date[i])[oper]();
+			window['P_'+campi_date[i]]=$$(campi_date[i])[oper]();
 					
 		}
-		
-		/*P_d1codfunz=$$('d1desfubr').sourceAtt.getValue();
-		P_d1codrepa=$$('d1desrebr').sourceAtt.getValue();
-		P_d1codrala=$$('d1desrabr').sourceAtt.getValue();
-		P_d1codstgi=$$('d1desstbr').sourceAtt.getValue();*/
-		
-		
-		/*if($("#d1desfubr").value== null){
-			P_d1codfunz=0;
 			
-		}*/
-		
 		
 		if ($$('d1desfubr').getValue() != 'null'){
 			console.log("entrato in controllo");
 			for (i=0;i<mansioni.length;i++){
 				if ($$('d1desfubr').getValue() == mansioni[i].d1desfubr){ 
-					//console.log("trovato"+mansioni[i].d1codfunz);
 					P_d1codfunz=mansioni[i].d1codfunz;
 				}
 			}
@@ -952,12 +817,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 			P_d1codfunz=0;
 		}
 		
-			
-		//console.log("dato P_d1codfunz"+P_d1codfunz);
-		
-		/*if($("#d1desrebr").value== null){
-			P_d1codrepa=0;
-		}*/
 		
 		if ($$('d1desrebr').getValue()!='null'){	
 			for (i=0;i<dislocazione.length;i++){
@@ -969,11 +828,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		}else{
 			P_d1codrepa=0;
 		}
-		//console.log("dato P_d1codrepa"+P_d1codrepa);
-	 
-	 	/*if($("#d1desrabr").value== null){
-			P_d1codrala=0;
-		}*/
+		
 		if ($$('d1desrabr').getValue()!='null'){
 				
 			for (i=0;i<rapplavoro.length;i++){
@@ -986,11 +841,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		}else{
 			P_d1codrala=0;
 		}
-		//console.log("dato P_d1codrala"+P_d1codrala);
-		
-		/*if($("#d1desstbr").value== null){
-			P_d1codstgi=0;
-		}*/
 		
 		if ($$('d1desstbr').getValue()!='null'){
 				
@@ -1003,10 +853,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 			}
 		}else{
 			P_d1codstgi=0;
-		}	
-		//console.log("dato P_d1desstbr"+P_d1codstgi);
-		//console.log(P_d1codfunz,P_d1codrepa,P_d1codrala,P_d1codstgi);
-		
+		}		
 	}
 	
 	function CheckDate(){
@@ -1020,8 +867,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				return true;
 			}
 		}
-		
-		
 	}
 	
 	function CheckDB(){
@@ -1029,13 +874,14 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 			Rpc2.testconnessione();
  		}
 		catch(e) { // in case of error
-    		alert("Db non trovato! vuole cambiare i dati di connessione?");
+    		alert("impostare i dati della connessione al database nel menu settings");
     		document.location.href = "/Default.waPage/index.html";
  		}
  	}
 
    
 // @region eventManager// @startlock
+	WAF.addListener("Drop_Dati", "click", Drop_Dati.click, "WAF");
 	WAF.addListener("imageButton1", "click", imageButton1.click, "WAF");
 	WAF.addListener("search_d1codfis", "keydown", search_d1codfis.keydown, "WAF");
 	WAF.addListener("search_d1genctre", "keydown", search_d1genctre.keydown, "WAF");
@@ -1073,9 +919,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	WAF.addListener("Apri_Insert", "click", Apri_Insert.click, "WAF");
 	WAF.addListener("d1datcess", "blur", d1datcess.blur, "WAF");
 	WAF.addListener("d1codazie", "blur", d1codazie.blur, "WAF");
-	WAF.addListener("d1gensess", "blur", d1gensess.blur, "WAF");
 	WAF.addListener("search_d1datnasc", "keydown", search_d1datnasc.keydown, "WAF");
-	WAF.addListener("Drop_Dati", "click", Drop_Dati.click, "WAF");
 	WAF.addListener("document", "onLoad", documentEvent.onLoad, "WAF");
 	WAF.addListener("ConfermaDati", "click", ConfermaDati.click, "WAF");
 	WAF.addListener("Back", "click", Back.click, "WAF");

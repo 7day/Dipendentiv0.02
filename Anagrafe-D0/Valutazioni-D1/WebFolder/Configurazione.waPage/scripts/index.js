@@ -82,7 +82,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				var valore19=$$('d1desvar2').getValue();
 				var valore20=$$('d1desvar3').getValue();
 
-				//console.log($$('d1codazie').getValue());
+				
 				sources.parametri.addNewElement();
 				
 				 $$('d1codazie').setValue(valore1); 
@@ -246,11 +246,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				}
 			}
 			
-			//console.log(sources.parametri.d1codazie.length,sources.parametri.d1genrags.length,sources.parametri.d1genindi.length,sources.parametri.d1gencitt.length,sources.parametri.d1genprov.length  ,sources.parametri.d1gencap.length  ,sources.parametri.d1gentel.length  ,sources.parametri.d1genfax.length  ,sources.parametri.d1genema1.length  ,sources.parametri.d1genema2.length  ,sources.parametri.d1genema3.length  ,sources.parametri.d1genhost.length  ,sources.parametri.d1genuser.length  ,sources.parametri.d1genpass.length  ,sources.parametri.d1gendb.length  ,sources.parametri.d1genport.length  ,sources.parametri.d1genssl.length  ,sources.parametri.d1desvar1.length  ,sources.parametri.d1desvar2.length  ,sources.parametri.d1desvar3.length);
 			sources.parametri.save();
-			
-			/*location.reload();
-			document.location.href = "/Default.waPage/index.html";*/
 		}
 	};// @lock
 
