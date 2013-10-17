@@ -500,6 +500,9 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		
 		//format delle data nei campi testo e del datepicker
 		$.datepicker.setDefaults( $.datepicker.regional[ "it" ] );
+	
+
+
 		$$('d1datnasc').setValue(WAF.utils.formatString(data.dtnasc, {format: '#dd-mm-yy'}));
 		$$('d1datassu').setValue(WAF.utils.formatString(data.dtassu, {format: '#dd-mm-yy'}));
 		$$('d1datcess').setValue(WAF.utils.formatString(data.dtdimi, {format: '#dd-mm-yy'}));
