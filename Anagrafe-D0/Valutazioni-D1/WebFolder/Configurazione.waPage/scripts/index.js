@@ -32,33 +32,12 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	imageButton1.click = function imageButton1_click (event)// @startlock
 	{// @endlock
-		console.log("d1codazie"+sources.parametri.d1codazie);    
-		console.log("d1genrags"+sources.parametri.d1genrags);    
-		console.log("d1genindi"+sources.parametri.d1genindi);    
-		console.log("d1gencitt"+sources.parametri.d1gencitt);    
-		console.log("d1genprov"+sources.parametri.d1genprov);    
-		console.log("d1gencap"+sources.parametri.d1gencap);      
-		console.log("d1gentel"+sources.parametri.d1gentel);      
-		console.log("d1genfax"+sources.parametri.d1genfax);      
-		console.log("d1genema1"+sources.parametri.d1genema1);    
-		console.log("d1genema2"+sources.parametri.d1genema2);    
-		console.log("d1genema3"+sources.parametri.d1genema3);    
-		console.log("d1genhost"+sources.parametri.d1genhost);    
-		console.log("d1genuser"+sources.parametri.d1genuser);    
-		console.log("d1genpass"+sources.parametri.d1genpass);    
-		console.log("d1gendb"+sources.parametri.d1gendb);        
-		console.log("d1genport"+sources.parametri.d1genport);    
-		console.log("d1genssl"+sources.parametri.d1genssl) ;    
-		console.log("d1desvar1"+sources.parametri.d1desvar1);    
-		console.log("d1desvar2"+sources.parametri.d1desvar2);    
-		console.log("d1desvar3"+sources.parametri.d1desvar3);
 		
 		if($$('d1codazie').getValue()== ""){
+					
 					$$("tabView1").selectTab(1);
 					$$('d1codazie').focus();
-					alert("inserisci id azienda");
-					console.log("azienda vuota");
-				
+					alert("inserisci id azienda");		
 		}else{	
 			if (sources.parametri.getPosition()==-1){
 				var valore1=$$('d1codazie').getValue(); 
@@ -472,28 +451,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	documentEvent.onLoad = function documentEvent_onLoad (event)// @startlock
 	{// @endlock
 		console.log(sources.parametri.getPosition());
-		
-		console.log("d1codazie"+sources.parametri.d1codazie);    
-		console.log("d1genrags"+sources.parametri.d1genrags);    
-		console.log("d1genindi"+sources.parametri.d1genindi);    
-		console.log("d1gencitt"+sources.parametri.d1gencitt);    
-		console.log("d1genprov"+sources.parametri.d1genprov);    
-		console.log("d1gencap"+sources.parametri.d1gencap);      
-		console.log("d1gentel"+sources.parametri.d1gentel);      
-		console.log("d1genfax"+sources.parametri.d1genfax);      
-		console.log("d1genema1"+sources.parametri.d1genema1);    
-		console.log("d1genema2"+sources.parametri.d1genema2);    
-		console.log("d1genema3"+sources.parametri.d1genema3);    
-		console.log("d1genhost"+sources.parametri.d1genhost);    
-		console.log("d1genuser"+sources.parametri.d1genuser);    
-		console.log("d1genpass"+sources.parametri.d1genpass);    
-		console.log("d1gendb"+sources.parametri.d1gendb);        
-		console.log("d1genport"+sources.parametri.d1genport);    
-		console.log("d1genssl)"+sources.parametri.d1genssl) ;    
-		console.log("d1desvar1"+sources.parametri.d1desvar1);    
-		console.log("d1desvar2"+sources.parametri.d1desvar2);    
-		console.log("d1desvar3"+sources.parametri.d1desvar3);    
-
 		if (sources.parametri.getPosition()==-1){
 			console.log("non esiste una riga");
 		}else{

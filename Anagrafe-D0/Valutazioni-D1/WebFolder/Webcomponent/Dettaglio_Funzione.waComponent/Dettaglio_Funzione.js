@@ -179,8 +179,8 @@ function constructor (id) {
 		                'onSuccess': function (result) {                  
 		            		console.log("insert ok");
 		            		$$('component1').removeComponent();
-							$$("tabView3").selectTab(1);
 							Refresh_Ricerca("anagrafica");
+							$$("tabView3").selectTab(1);
 		                },  
 		                'onError': function (error) {
 		                	CheckDB();

@@ -3,3 +3,12 @@
 	The CSS styles that are created when you create a Widget Skin are placed in this file too.
 */
 
+.waf-theme.default .waf-textField.waf-role-prova {
+	color: rgb(0, 0, 0);
+}
+
+.waf-theme.default .waf-label.waf-role-prova {
+	min-width: 100px;
+	max-width: 100px;
+}
+

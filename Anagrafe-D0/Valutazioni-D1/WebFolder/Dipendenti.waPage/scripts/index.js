@@ -92,6 +92,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	Drop_Dati.click = function Drop_Dati_click (event)// @startlock
 	{// @endlock
+		Ricerca("anagrafica");
 		toggle_avvisocancel=0;
 		$$("tabView3").selectTab(1);
 		ResetCampi();
@@ -402,13 +403,15 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	dataGrid2.onRowDblClick = function dataGrid2_onRowDblClick (event)// @startlock
 	{// @endlock
+		sources.anagrafe.sync();
 		var sel_elem=sources.anagrafe.getCurrentElement();
 				
 		 $$('d1codazie').hide();
 		 $$('d1codmatr').hide();
 		 toggle_avvisocancel=0;
-		 $$("tabView3").selectTab(2);
 		 Popola_Griglia(sel_elem);
+		 $$("tabView3").selectTab(2);
+		 
 	};// @lock
 
 	Apri_Insert.click = function Apri_Insert_click (event)// @startlock
@@ -417,7 +420,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		$$('d1codmatr').show();
 		toggle_avvisocancel=1;
 	   
-	    $$("tabView3").selectTab(2);
+	   
 	    
 	    if ($$('search_d1datnasc').getValue()!=''){
 			$$('d1datnasc').setValue($$('search_d1datnasc').getValue());
@@ -436,7 +439,8 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		}
 		if($$('search_d1codfis').getValue()!=''){
 			$$('d1codfis').setValue($$('search_d1codfis').getValue());
-		}		
+		}	
+		 $$("tabView3").selectTab(2);	
 	};// @lock
 
 	d1datcess.focus = function d1datcess_focus (event)// @startlock
@@ -553,7 +557,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				      'onSuccess': function (result) {
 				                   console.log("ok");
 				                   ResetCampi();
-				                   $$("tabView3").selectTab(1);
 				       },  
 				      'onError': function (error) {
 				                	CheckDB();
@@ -569,27 +572,26 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				console.log("insert");
 				Rpc2.insertAsync({
 				       'onSuccess': function (result) {                  
-				                   
 				                   ResetCampi();
-				                   $$("tabView3").selectTab(1);
 				                   console.log("insert riuscita");
 				        },  
 				       'onError': function (error) {
 				                   CheckDB();
-				                   alert('operazione non riusciuta dati non corretti? ')
-				                   console.log("errore dati inseriti non corretti");
+				                   
+				                  //$$('ConfermaDati').setErrorMessage({Error:300,message: "prova"/*,tooltip:true*/})
+				                   alert('operazione non riusciuta dati non corretti');
+				                   console.log(error);
+				                   
 				        },  
 				        'params': [connectionParams,tabella,P_d1codazie,P_d1codmatr,P_d1gencogn,P_d1gennome,P_d1gensess,P_d1datnasc,P_d1codfis,P_d1genctre,P_d1geninre,P_d1gencpre,P_d1genprre,P_d1genfrre,P_d1genpres,P_d1genmail,P_d1datassu,P_d1datcess,P_d1codrepa,P_d1codrege,P_d1codfunz,P_d1codstgi,P_d1codrala,P_d1codcoec,P_d1codinec,P_d1codvar1,P_d1codvar2,P_d1codvar3]
 				        });
-				           
-				        console.log("risultato");
-				}  
-					 		
-				Ricerca("anagrafica");
+				}
+				
+				Ricerca("anagrafica");  		
 				StrToDate();
-				sources.anagrafe.sync();
 				source.anagrafe.orderBy("d1codazie asc");
 				sources.anagrafe.select(-1);
+				$$("tabView3").selectTab(1);
 		   }
 		    	
 		}else{
@@ -871,6 +873,10 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 			}
 		}
 	}
+	
+
+	
+	
 	
 	function CheckDB(){
 		try {
