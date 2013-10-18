@@ -534,9 +534,9 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		
 		if (P_d1codazie!='' && P_d1codmatr!='' && P_d1gencogn!='' && P_d1gennome!='' && P_d1gensess!='' && P_d1datnasc!='' && P_d1codfis!='' && P_d1datassu!=''){
 			
-			if(CheckDate()){
+			/*if(CheckDate()){
 				alert("date non corrette reinserire");
-			}else{
+			}else{*/
 				//porta stringhe date da dd/mm/yy a yy/mm/dd
 				P_d1datnasc=Conv_DataPerDb(P_d1datnasc,"/");
 				P_d1datassu=Conv_DataPerDb(P_d1datassu,"/");
@@ -588,7 +588,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				source.anagrafe.orderBy("d1codazie asc");
 				sources.anagrafe.select(-1);
 				$$("tabView3").selectTab(1);
-		   }
+		   //}
 		    	
 		}else{
 			alert("inserisci tutti i campi obbligatori");
@@ -648,7 +648,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	function Ricerca(tipo){
 		
 		if (tipo=="anagrafica"){
-			if ($$('search_d1gencogn').getValue()!='' && isNaN($$('search_d1gencogn').getValue()[0]) || $$('search_d1gennome').getValue()!='' && isNaN($$('search_d1gennome').getValue()[0])|| $$('search_d1genmail').getValue()!='' && isNaN($$('search_d1genmail').getValue()[0])|| $$('search_d1genctre').getValue()!='' && isNaN($$('search_d1genctre').getValue()[0])|| $$('search_d1codfis').getValue()!=''&& isNaN($$('search_d1codfis').getValue()[0])||$$('search_d1datnasc').getValue()!=''){
+			//if ($$('search_d1gencogn').getValue()!='' && isNaN($$('search_d1gencogn').getValue()[0]) || $$('search_d1gennome').getValue()!='' && isNaN($$('search_d1gennome').getValue()[0])|| $$('search_d1genmail').getValue()!='' && isNaN($$('search_d1genmail').getValue()[0])|| $$('search_d1genctre').getValue()!='' && isNaN($$('search_d1genctre').getValue()[0])|| $$('search_d1codfis').getValue()!=''&& isNaN($$('search_d1codfis').getValue()[0])||$$('search_d1datnasc').getValue()!=''){
 				var connectionParams= Rpc2.connetti();
 				
 				if ($$('search_d1datnasc').getValue()!=''){
@@ -667,17 +667,17 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 					}					
 						console.log(i);			
 						console.log("Data convertita"+DTconv);
-					}
-					anagrafe = Rpc2.search(connectionParams,tabella,'d1gencogn','d1gennome','d1genmail','d1genctre','d1codfis','d1datnasc',$$('search_d1gencogn').getValue(),$$('search_d1gennome').getValue(),$$('search_d1genmail').getValue(),$$('search_d1genctre').getValue(),$$('search_d1codfis').getValue(),DTconv);
-					StrToDate();
-					sources.anagrafe.sync();
-					sources.anagrafe.select(-1);				
+				}
+				anagrafe = Rpc2.search(connectionParams,tabella,'d1gencogn','d1gennome','d1genmail','d1genctre','d1codfis','d1datnasc',$$('search_d1gencogn').getValue(),$$('search_d1gennome').getValue(),$$('search_d1genmail').getValue(),$$('search_d1genctre').getValue(),$$('search_d1codfis').getValue(),DTconv);
+				StrToDate();
+				sources.anagrafe.sync();
+				sources.anagrafe.select(-1);				
 					
-				}else{
+				/*}else{
 					if (toggle_avvisocancel==0){
 						alert("inserisci almeno un campo");
 					}
-				}
+				}*/
 			}
 			
 	}

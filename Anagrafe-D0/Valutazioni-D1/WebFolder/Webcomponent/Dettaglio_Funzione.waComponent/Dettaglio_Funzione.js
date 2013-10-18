@@ -181,9 +181,11 @@ function constructor (id) {
 		                },  
 		                'onError': function (error) {
 		                	CheckDB();
-		                   alert('operazione insert non riusciuta ');
+		                	console.log(error);
+		                  	alert('operazione insert non riusciuta ');
+		                 
 		                    
-		               		console.log($$(getHtmlId('d1desfubr')).getValue());
+		               		/*console.log($$(getHtmlId('d1desfubr')).getValue());
 					
 		                    var scelt=window.confirm("l'elemento è gia presente vuoi aggiornarlo?");
 		                    	if (scelt){
@@ -202,7 +204,7 @@ function constructor (id) {
 						                'params': [connectionParams,'d1anagfunz',$$(getHtmlId('d1codfunz')).getValue(),$$(getHtmlId('d1desfubr')).getValue(),$$(getHtmlId('d1desfudl')).getValue(),$$(getHtmlId('d1gennote')).getValue(),0,0,0,0,0,0,0,0]
 						             	});
 						             	
-						             }
+						             }*/
 	 					   
 		                  },  
 		                'params': [connectionParams,'d1anagfunz',$$(getHtmlId('d1codfunz')).getValue(),$$(getHtmlId('d1desfubr')).getValue(),$$(getHtmlId('d1desfudl')).getValue(),$$(getHtmlId('d1gennote')).getValue(),0,0,0,0,0,0,0,0]
@@ -236,17 +238,11 @@ function constructor (id) {
 	function Refresh_Ricerca(tipo){
 		if (tipo=="anagrafica"){
 			
-			if ($$('component3_search_d1codfunz').getValue()=='' || $$('component3_search_d1desfubr').getValue()==''){
-						var connectionParams= Rpc2.connetti();
-						mansioni3 = Rpc2.LetturaDb(connectionParams,'d1anagfunz');
-						sources.mansioni3.sync();
-						
-				}
-			if ($$('component3_search_d1codfunz').getValue()!='' || $$('component3_search_d1desfubr').getValue()!='' && isNaN($$('component3_search_d1desfubr').getValue()[0]) /*|| $$('search_d1genmail').getValue()!='' || $$('search_d1genctre').getValue()!='' || $$('search_d1codfis').getValue()!=''||$$('search_d1datnasc').getValue()!=''*/){
+			
 				var connectionParams= Rpc2.connetti();
 				mansioni3 = Rpc2.search(connectionParams,'d1anagfunz','d1codfunz','d1desfubr',$$('component3_search_d1codfunz').getValue(),$$('component3_search_d1desfubr').getValue(),0,0,0,0,0,0,0,0);
 				sources.mansioni3.sync();
-				}
+				
 			}
 			sources.mansioni3.select(-1);	
 	}

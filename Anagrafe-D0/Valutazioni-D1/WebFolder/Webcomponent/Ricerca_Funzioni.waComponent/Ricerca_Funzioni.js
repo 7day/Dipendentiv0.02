@@ -20,6 +20,7 @@ function constructor (id) {
 	CheckDB();	
 	
 	
+	
 	// @region namespaceDeclaration// @startlock
 	var search_d1codfunz = {};	// @textField
 	var search_d1desfubr = {};	// @textField
@@ -76,6 +77,9 @@ function constructor (id) {
 	{// @endlock
 		if(modalita!="lettura"){
 		 	$$(getHtmlId('Del_Mans')).show();
+		 	
+		}else{
+		$$(getHtmlId('conferma')).show();
 		}
 	};// @lock
 
@@ -86,6 +90,7 @@ function constructor (id) {
 			$$("tabView3").selectTab(2);
 			$$('component1').loadComponent({path: '/Webcomponent/Dettaglio_Funzione.waComponent', userData:  { 'dati':data.userData,'modalita': 'update','cur':sources.mansioni3.getCurrentElement() }});
 		}
+	
 	};// @lock
 
 	conferma.click = function conferma_click (event)// @startlock
@@ -186,19 +191,11 @@ function constructor (id) {
 	};// @lock
 	function Ricerca_Mans(tipo){
 		if (tipo=="anagrafica"){
-				if ($$(getHtmlId('search_d1codfunz')).getValue()=='' || $$(getHtmlId('search_d1desfubr')).getValue()==''){
-						var connectionParams= Rpc2.connetti();
-						mansioni3 = Rpc2.LetturaDb(connectionParams,'d1anagfunz');
-						sources.mansioni3.sync();
-				}
-					
-			if ($$(getHtmlId('search_d1codfunz')).getValue()!='' || $$(getHtmlId('search_d1desfubr')).getValue()!='' && isNaN($$(getHtmlId('search_d1desfubr')).getValue()[0]) /*|| $$('search_d1genmail').getValue()!='' || $$('search_d1genctre').getValue()!='' || $$('search_d1codfis').getValue()!=''||$$('search_d1datnasc').getValue()!=''*/){
 				var connectionParams= Rpc2.connetti();
 				console.log($$(getHtmlId('search_d1codfunz')).getValue());
 				console.log($$(getHtmlId('search_d1desfubr')).getValue());
 				mansioni3 = Rpc2.search(connectionParams,'d1anagfunz','d1codfunz','d1desfubr',$$(getHtmlId('search_d1codfunz')).getValue(),$$(getHtmlId('search_d1desfubr')).getValue(),0,0,0,0,0,0,0,0);
 				sources.mansioni3.sync();
-				}
 			}
 			sources.mansioni3.select(-1);	
 	}

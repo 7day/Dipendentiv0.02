@@ -225,7 +225,18 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				}
 			}
 			
-			sources.parametri.save();
+			sources.parametri.save({
+		        onSuccess: function(event) {
+		                // displays success message in a DisplayError area
+		            alert("dati salvati");
+		        },
+		        onError: function(error) {
+		                // displays error message in a DisplayError area
+		            //$("#errorDiv1").html(error['error'][0].message);
+		            alert("errore nel salvataggio dati")
+		        }
+		    	});
+			
 		}
 	};// @lock
 

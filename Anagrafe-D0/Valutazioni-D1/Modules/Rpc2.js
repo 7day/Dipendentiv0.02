@@ -519,22 +519,39 @@ exports.del = function(connectionParams,tabella,id,id2)
 			dbquery+=' AND '+campodata0+' = '+'"'+valoredata0+'"';
 		}
 	}
+	console.log("pippo1");
 	if (tabella=='d1anagfunz'){
-		dbquery='SELECT * FROM d1anagfunz';
+		console.log("pippo2");
+		dbquery='SELECT * FROM d1anagfunz WHERE d1codfunz!="0" ';
+		if (campo2!='' || campo3!='') dbquery+=' AND ';
 		
-		if (campo2==''){
-			if (campo3!=''){
-				//SELECT * FROM d1anagfunz WHERE d1codfunz LIKE "%5%" OR d1codfunz LIKE "5%" ;
-				dbquery+=' WHERE ('+campo1+' LIKE '+'"'+"%"+campo3+"%"+'"'+' OR '+campo1+' LIKE '+'"'+"%"+campo3+'"'+' OR '+campo1+' LIKE '+'"'+campo3+"%"+'"'+')';
-			}else{
-				dbquery="";
-			}
-		}else{
-			dbquery+=' WHERE ('+campo0+' LIKE '+'"'+"%"+campo2+"%"+'"'+' OR '+campo0+' LIKE '+'"'+"%"+campo2+'"'+' OR '+campo0+' LIKE '+'"'+campo2+"%"+'"'+')';
-			if (campo3!=''){
-				dbquery+=' OR ('+campo1+' LIKE '+'"'+"%"+campo3+"%"+'"'+' OR '+campo1+' LIKE '+'"'+"%"+campo3+'"'+' OR '+campo1+' LIKE '+'"'+campo3+"%"+'"'+')';
-			}
+		temp='';
+		if (campo2!='') 
+		temp+=' ('+campo0+' LIKE "%'+campo2+'" OR '+campo0+' LIKE "%'+campo2+'%" ) ';
+		
+		if (campo3!='')
+		{
+			console.log("pippo3");
+			if (campo2!='') temp+=' OR ';
+			temp+='  ('+campo1+' LIKE "%'+campo3+'" OR '+campo1+' LIKE "%'+campo3+'%" ) ';
 		}
+		 
+		dbquery+=temp;
+		console.log("pippo4");
+		
+//		if (campo2==''){
+//			if (campo3!=''){
+//				//SELECT * FROM d1anagfunz WHERE d1codfunz LIKE "%5%" OR d1codfunz LIKE "5%" ;
+//				dbquery+=' WHERE d1codfunz!="0" AND( '+campo1+' LIKE '+'"'+"%"+campo3+"%"+'"'+' OR '+campo1+' LIKE '+'"'+"%"+campo3+'"'+' OR '+campo1+' LIKE '+'"'+campo3+"%"+'"'+')';
+//			}else{
+//				dbquery+=' WHERE d1codfunz!="0"';
+//			}
+//		}else{
+//			dbquery+=' WHERE d1codfunz!="0" AND ('+campo0+' LIKE '+'"'+"%"+campo2+"%"+'"'+' OR '+campo0+' LIKE '+'"'+"%"+campo2+'"'+' OR '+campo0+' LIKE '+'"'+campo2+"%"+'"'+')';
+//			if (campo3!=''){
+//				dbquery+=' OR ('+campo1+' LIKE '+'"'+"%"+campo3+"%"+'"'+' OR '+campo1+' LIKE '+'"'+"%"+campo3+'"'+' OR '+campo1+' LIKE '+'"'+campo3+"%"+'"'+')';
+//			}
+//		}
 	}	
 		console.log(dbquery);
 		res = connection.execute(dbquery);
@@ -554,11 +571,8 @@ exports.del = function(connectionParams,tabella,id,id2)
    
 	if (tabella=='d1anagfunz'){
 		
-		dbquery='SELECT * FROM d1anagfunz';
+		dbquery='SELECT * FROM d1anagfunz WHERE '+campo+'="'+valore+'"';
 		
-		if (valore!=''){
-			dbquery+=' WHERE ('+campo+'='+valore+')';
-		}
 		console.log("findbykey");
 		console.log(dbquery);
 		res = connection.execute(dbquery);
