@@ -126,8 +126,13 @@ function constructor (id) {
 	if (data.userData.modalita=='update'){
 	
 		$$(getHtmlId('d1codfunz')).setValue(data.userData.dati.d1codfunz);
-		$$(getHtmlId('d1codfunz')).setReadOnly(true); 
+		$$(getHtmlId('d1codfunz')).setReadOnly(true);
+		if(data.userData.dati.d1codfunz=="0"){
+			$$(getHtmlId('d1desfubr')).setReadOnly(true);
+		}
 		$$(getHtmlId('d1desfubr')).setValue(data.userData.dati.d1desfubr);
+		
+		
 		$$(getHtmlId('d1desfudl')).setValue(data.userData.dati.d1desfudl);
 		$$(getHtmlId('d1gennote')).setValue(data.userData.dati.d1gennote);
 	}else{
