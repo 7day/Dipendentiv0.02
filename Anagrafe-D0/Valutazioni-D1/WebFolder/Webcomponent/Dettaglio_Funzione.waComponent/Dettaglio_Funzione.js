@@ -60,6 +60,7 @@ function constructor (id) {
 			mansioni3= Rpc2.delAsync({
 	                'onSuccess': function (result) {
 	                   console.log("ok");
+	                   Refresh_Ricerca("anagrafica");
 	                   sources.mansioni3.sync();
 	                },  
 	                'onError': function (error) {
@@ -159,6 +160,7 @@ function constructor (id) {
 				Rpc2.updateAsync({
 		                'onSuccess': function (result) {
 		                   console.log("ok");
+		                   Refresh_Ricerca("anagrafica");
 		                   $$("tabView3").selectTab(1);
 		                },  
 		                'onError': function (error) {

@@ -620,6 +620,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 			anagrafe= Rpc2.delAsync({
 	                'onSuccess': function (result) {
 	                   console.log("ok");
+	                   Ricerca("anagrafica");	
 	                   sources.anagrafe.sync();
 	                },  
 	                'onError': function (error) {

@@ -150,6 +150,7 @@ function constructor (id) {
 			mansioni3= Rpc2.delAsync({
 	                'onSuccess': function (result) {
 	                   console.log("ok");
+	                   Ricerca_Mans("anagrafica");
 	                },  
 	                'onError': function (error) {
 	                	CheckDB();
