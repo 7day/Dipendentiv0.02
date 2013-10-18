@@ -20,8 +20,8 @@
 
 #{id}label41 {
 	 width: 100px;
-	 height: 15px;
-	 top: 22.5px;
+	 height: 16px;
+	 top: 22px;
 	 left: 16px;
 	
 	 position: absolute;
@@ -33,8 +33,8 @@
 
 #{id}label5 {
 	 width: 100px;
-	 height: 15px;
-	 top: 55.5px;
+	 height: 16px;
+	 top: 55px;
 	 left: 16px;
 	
 	 position: absolute;
@@ -45,8 +45,8 @@
 
 #{id}label9 {
 	 width: 100px;
-	 height: 15px;
-	 top: 55.5px;
+	 height: 16px;
+	 top: 55px;
 	 left: 280px;
 	
 	 position: absolute;
@@ -57,8 +57,8 @@
 
 #{id}label42 {
 	 width: 100px;
-	 height: 15px;
-	 top: 22.5px;
+	 height: 16px;
+	 top: 22px;
 	 left: 280px;
 	
 	 position: absolute;
@@ -128,8 +128,8 @@
 
 #{id}richText1 {
 	 z-index: 4;
-	 width: 66px;
-	 height: 16px;
+	 width: 59px;
+	 height: 18px;
 	 top: 11px;
 	 left: 30px;
 	

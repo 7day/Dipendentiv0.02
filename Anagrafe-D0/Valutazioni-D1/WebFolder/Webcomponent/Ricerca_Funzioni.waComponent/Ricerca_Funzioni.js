@@ -89,6 +89,14 @@ function constructor (id) {
 			data.userData=sources.mansioni3.getCurrentElement();
 			$$("tabView3").selectTab(2);
 			$$('component1').loadComponent({path: '/Webcomponent/Dettaglio_Funzione.waComponent', userData:  { 'dati':data.userData,'modalita': 'update','cur':sources.mansioni3.getCurrentElement() }});
+		}else{
+			var connectionParams= Rpc2.connetti();
+			mansioni = Rpc2.LetturaDb(connectionParams,'d1anagfunz');
+			source.mansioni.sync();
+			$$("tabView3").selectTab(2);
+			var sel_elem=sources.mansioni3.getCurrentElement();		
+			$$('d1desfubr').setValue(sel_elem.d1desfubr); 
+			$$('component3').removeComponent();
 		}
 	
 	};// @lock

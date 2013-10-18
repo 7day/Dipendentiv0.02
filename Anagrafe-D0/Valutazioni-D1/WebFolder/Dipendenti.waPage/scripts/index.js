@@ -557,6 +557,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				      'onSuccess': function (result) {
 				                   console.log("ok");
 				                   ResetCampi();
+				                   Ricerca("anagrafica");
 				       },  
 				      'onError': function (error) {
 				                	CheckDB();
@@ -573,6 +574,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				Rpc2.insertAsync({
 				       'onSuccess': function (result) {                  
 				                   ResetCampi();
+				                   Ricerca("anagrafica");
 				                   console.log("insert riuscita");
 				        },  
 				       'onError': function (error) {
@@ -583,6 +585,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				        'params': [connectionParams,tabella,P_d1codazie,P_d1codmatr,P_d1gencogn,P_d1gennome,P_d1gensess,P_d1datnasc,P_d1codfis,P_d1genctre,P_d1geninre,P_d1gencpre,P_d1genprre,P_d1genfrre,P_d1genpres,P_d1genmail,P_d1datassu,P_d1datcess,P_d1codrepa,P_d1codrege,P_d1codfunz,P_d1codstgi,P_d1codrala,P_d1codcoec,P_d1codinec,P_d1codvar1,P_d1codvar2,P_d1codvar3]
 				        });
 				} 
+				
 				Ricerca("anagrafica");  		
 				StrToDate();
 				source.anagrafe.orderBy("d1codazie asc");
@@ -671,14 +674,15 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				anagrafe = Rpc2.search(connectionParams,tabella,'d1gencogn','d1gennome','d1genmail','d1genctre','d1codfis','d1datnasc',$$('search_d1gencogn').getValue(),$$('search_d1gennome').getValue(),$$('search_d1genmail').getValue(),$$('search_d1genctre').getValue(),$$('search_d1codfis').getValue(),DTconv);
 				StrToDate();
 				sources.anagrafe.sync();
-				sources.anagrafe.select(-1);				
-					
+				
 				/*}else{
 					if (toggle_avvisocancel==0){
 						alert("inserisci almeno un campo");
 					}
 				}*/
 			}
+			sources.anagrafe.select(-1);				
+					
 			
 	}
 	
