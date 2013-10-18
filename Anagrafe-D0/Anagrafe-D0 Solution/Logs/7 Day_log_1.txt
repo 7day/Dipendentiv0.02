@@ -2555,3 +2555,367 @@
 2013-10-18 23:46:51 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project closed
 2013-10-18 23:46:51 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project closed
 2013-10-18 23:46:51 [com.wakanda-software.7 Day] INFO - "7 Day" solution closed
+2013-10-18 23:48:28 [com.wakanda-software] INFO - Opens the solution "C:\Users\Sviluppatore\Documents\GitHub\Dipendentiv0.02\Anagrafe-D0\Anagrafe-D0 Solution\7 Day.waSolution" for running
+2013-10-18 23:48:28 [com.wakanda-software.7 Day] INFO - Users and groups directory opened
+2013-10-18 23:48:28 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - Datastore opened
+2013-10-18 23:48:28 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project opened
+2013-10-18 23:48:28 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project opened
+2013-10-18 23:48:28 [com.wakanda-software.7 Day] INFO - "7 Day" solution opened
+2013-10-18 23:48:28 [com.wakanda-software] INFO - Starts "7 Day" solution
+2013-10-18 23:48:29 [com.wakanda-software.7 Day.ServerAdmin] INFO - HTTP Server started
+2013-10-18 23:48:29 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project started
+2013-10-18 23:48:29 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - HTTP Server started
+2013-10-18 23:48:29 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project started
+2013-10-18 23:48:29 [com.wakanda-software.7 Day.ServerAdmin] INFO - Executes the bootstrap file(s)
+2013-10-18 23:48:29 [com.wakanda-software.7 Day.ServerAdmin] INFO - Bootstrap file(s) executed
+2013-10-18 23:48:29 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - Executes the bootstrap file(s)
+2013-10-18 23:48:29 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - Bootstrap file(s) executed
+2013-10-18 23:48:29 [com.wakanda-software.7 Day] INFO - "7 Day" solution started
+2013-10-18 23:48:29 [com.wakanda-software] INFO - "7 Day" solution has been successfully opened for running (duration: 635 ms)
+2013-10-18 23:48:37 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:48:37 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:48:37 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codfunz,d1desfubr,d1desfudl,d1gennote FROM d1anagfunz
+2013-10-18 23:48:38 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codrepa,d1desrebr,d1desredl,d1codrege,d1gennote FROM d1anagrepa
+2013-10-18 23:48:38 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codrala,d1desrabr,d1desradl,d1gennote FROM d1anagrala
+2013-10-18 23:48:38 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codstgi,d1desstbr,d1desstdl,d1gennote FROM d1anagstgi
+2013-10-18 23:48:39 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:48:39 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:48:39 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codfunz,d1desfubr,d1desfudl,d1gennote FROM d1anagfunz
+2013-10-18 23:48:39 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codrepa,d1desrebr,d1desredl,d1codrege,d1gennote FROM d1anagrepa
+2013-10-18 23:48:39 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codrala,d1desrabr,d1desradl,d1gennote FROM d1anagrala
+2013-10-18 23:48:39 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codstgi,d1desstbr,d1desstdl,d1gennote FROM d1anagstgi
+2013-10-18 23:48:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:48:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:48:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-18 23:48:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-18 23:49:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:49:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:49:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:49:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:49:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - dati inviati al modulo rpc35 66 asdasd aszasd M 2013-10-01 sdfsdf               2013-10-01  0   0 0 0          
+2013-10-18 23:49:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - INSERT INTO d1anagmatr (d1codazie,d1codmatr,d1gencogn,d1gennome,d1gensess,d1datnasc,d1codfis,d1genctre,d1geninre,d1gencpre,d1genprre,d1genfrre,d1genpres,d1genmail,d1datassu,d1datcess,d1codrepa,d1codrege,d1codfunz,d1codstgi,d1codrala,d1codcoec,d1codinec,d1codvar1,d1codvar2,d1codvar3)VALUES (35,66,"asdasd","aszasd","M","2013-10-01","sdfsdf"," "," "," "," "," "," "," ","2013-10-01",null,"0"," ","0","0","0"," "," "," "," "," ")
+2013-10-18 23:49:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "asdasd","aszasd","M","2013-10-01","sdfsdf"," "," "," "," "," "," "," ","2013-10-01",null,"0"," ","0","0","0"," "," "," "," "," "
+2013-10-18 23:49:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - INSERT INTO d1anagmatr (d1codazie,d1codmatr,d1gencogn,d1gennome,d1gensess,d1datnasc,d1codfis,d1genctre,d1geninre,d1gencpre,d1genprre,d1genfrre,d1genpres,d1genmail,d1datassu,d1datcess,d1codrepa,d1codrege,d1codfunz,d1codstgi,d1codrala,d1codcoec,d1codinec,d1codvar1,d1codvar2,d1codvar3)VALUES (35,66,"asdasd","aszasd","M","2013-10-01","sdfsdf"," "," "," "," "," "," "," ","2013-10-01",null,"0"," ","0","0","0"," "," "," "," "," ")
+2013-10-18 23:49:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-18 23:49:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-18 23:49:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:49:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:49:11 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-18 23:49:11 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-18 23:49:19 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:49:19 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:49:19 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:49:19 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:49:20 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - UPDATE d1anagmatr SET d1gennome="aszasdsss",d1gencogn="asdasd",d1gensess="M",d1datnasc="2013-10-01",d1codfis="sdfsdf",d1genctre=" ",d1geninre=" ",d1gencpre=" ",d1genprre=" ",d1genfrre=" ",d1genpres=" ",d1genmail=" ",d1datassu="2013-10-01",d1datcess=null,d1codrepa="0",d1codrege=" ",d1codfunz="0",d1codstgi="0",d1codrala="0",d1codcoec=" ",d1codinec=" ",d1codvar1=" ",d1codvar2=" ",d1codvar3=" " WHERE d1codmatr=66 AND d1codazie=35
+2013-10-18 23:49:20 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - UPDATE d1anagmatr SET d1gennome="aszasdsss",d1gencogn="asdasd",d1gensess="M",d1datnasc="2013-10-01",d1codfis="sdfsdf",d1genctre=" ",d1geninre=" ",d1gencpre=" ",d1genprre=" ",d1genfrre=" ",d1genpres=" ",d1genmail=" ",d1datassu="2013-10-01",d1datcess=null,d1codrepa="0",d1codrege=" ",d1codfunz="0",d1codstgi="0",d1codrala="0",d1codcoec=" ",d1codinec=" ",d1codvar1=" ",d1codvar2=" ",d1codvar3=" " WHERE d1codmatr=66 AND d1codazie=35
+2013-10-18 23:49:20 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-18 23:49:20 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-18 23:49:20 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:49:20 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:49:20 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-18 23:49:20 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-18 23:49:23 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:49:23 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:49:23 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-18 23:49:23 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-18 23:49:26 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:49:26 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:49:26 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:49:26 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:49:26 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - DELETE FROM d1anagmatr WHERE(d1codmatr=66 AND d1codazie=35)
+2013-10-18 23:49:26 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-18 23:49:26 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-18 23:49:26 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:49:26 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:49:26 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-18 23:49:26 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-18 23:50:01 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:50:01 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:50:01 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr   0 0 0 0 0 0 0 0
+2013-10-18 23:50:01 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0" 
+2013-10-18 23:50:02 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:50:02 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:50:02 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codfunz,d1desfubr,d1desfudl,d1gennote FROM d1anagfunz
+2013-10-18 23:50:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:50:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:50:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:50:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:50:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - dati inviati al modulo rpc3434 3535 sdads asdad M 2013-10-01 sdasd4               2013-10-01  0   3 0 0          
+2013-10-18 23:50:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - INSERT INTO d1anagmatr (d1codazie,d1codmatr,d1gencogn,d1gennome,d1gensess,d1datnasc,d1codfis,d1genctre,d1geninre,d1gencpre,d1genprre,d1genfrre,d1genpres,d1genmail,d1datassu,d1datcess,d1codrepa,d1codrege,d1codfunz,d1codstgi,d1codrala,d1codcoec,d1codinec,d1codvar1,d1codvar2,d1codvar3)VALUES (3434,3535,"sdads","asdad","M","2013-10-01","sdasd4"," "," "," "," "," "," "," ","2013-10-01",null,"0"," ","3","0","0"," "," "," "," "," ")
+2013-10-18 23:50:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "sdads","asdad","M","2013-10-01","sdasd4"," "," "," "," "," "," "," ","2013-10-01",null,"0"," ","3","0","0"," "," "," "," "," "
+2013-10-18 23:50:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - INSERT INTO d1anagmatr (d1codazie,d1codmatr,d1gencogn,d1gennome,d1gensess,d1datnasc,d1codfis,d1genctre,d1geninre,d1gencpre,d1genprre,d1genfrre,d1genpres,d1genmail,d1datassu,d1datcess,d1codrepa,d1codrege,d1codfunz,d1codstgi,d1codrala,d1codcoec,d1codinec,d1codvar1,d1codvar2,d1codvar3)VALUES (3434,3535,"sdads","asdad","M","2013-10-01","sdasd4"," "," "," "," "," "," "," ","2013-10-01",null,"0"," ","3","0","0"," "," "," "," "," ")
+2013-10-18 23:50:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-18 23:50:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-18 23:50:11 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:50:11 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:50:11 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-18 23:50:11 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-18 23:50:20 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:50:20 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:50:20 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr 223  0 0 0 0 0 0 0 0
+2013-10-18 23:50:20 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0"  AND  (d1codfunz LIKE "%223" OR d1codfunz LIKE "%223%" ) 
+2013-10-18 23:50:37 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:50:37 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:50:37 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr 1  0 0 0 0 0 0 0 0
+2013-10-18 23:50:37 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0"  AND  (d1codfunz LIKE "%1" OR d1codfunz LIKE "%1%" ) 
+2013-10-18 23:50:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:50:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:50:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr   0 0 0 0 0 0 0 0
+2013-10-18 23:50:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0" 
+2013-10-18 23:50:43 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:50:43 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:50:43 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr 2  0 0 0 0 0 0 0 0
+2013-10-18 23:50:43 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0"  AND  (d1codfunz LIKE "%2" OR d1codfunz LIKE "%2%" ) 
+2013-10-18 23:50:46 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:50:46 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:50:46 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr 3  0 0 0 0 0 0 0 0
+2013-10-18 23:50:46 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0"  AND  (d1codfunz LIKE "%3" OR d1codfunz LIKE "%3%" ) 
+2013-10-18 23:50:54 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:50:54 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:50:54 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:50:54 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:50:54 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - dati inviati al modulo rpc22 aa   0 0 0 0 0 0 0 0 undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined
+2013-10-18 23:50:54 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - INSERT INTO d1anagfunz(d1codfunz,d1desfubr,d1desfudl,d1gennote) VALUES ("22","aa",null,null)
+2013-10-18 23:50:54 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr   0 0 0 0 0 0 0 0
+2013-10-18 23:50:54 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0" 
+2013-10-18 23:50:54 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:50:54 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:50:54 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr   0 0 0 0 0 0 0 0
+2013-10-18 23:50:54 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0" 
+2013-10-18 23:50:57 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:50:57 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:50:57 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:50:57 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:50:57 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - DELETE FROM d1anagfunz WHERE(d1codfunz="22")
+2013-10-18 23:50:57 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr   0 0 0 0 0 0 0 0
+2013-10-18 23:50:57 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0" 
+2013-10-18 23:50:58 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:50:58 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:50:58 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr   0 0 0 0 0 0 0 0
+2013-10-18 23:50:58 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0" 
+2013-10-18 23:51:03 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:51:03 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:51:03 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:51:03 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:51:03 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - dati inviati al modulo rpc22 aaa   0 0 0 0 0 0 0 0 undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined
+2013-10-18 23:51:03 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - INSERT INTO d1anagfunz(d1codfunz,d1desfubr,d1desfudl,d1gennote) VALUES ("22","aaa",null,null)
+2013-10-18 23:51:04 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr   0 0 0 0 0 0 0 0
+2013-10-18 23:51:04 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0" 
+2013-10-18 23:51:04 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:51:04 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:51:04 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr   0 0 0 0 0 0 0 0
+2013-10-18 23:51:04 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0" 
+2013-10-18 23:51:08 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:51:08 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:51:08 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:51:08 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:51:09 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr   0 0 0 0 0 0 0 0
+2013-10-18 23:51:09 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0" 
+2013-10-18 23:51:09 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - DELETE FROM d1anagfunz WHERE(d1codfunz="22")
+2013-10-18 23:51:09 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:51:09 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:51:09 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr   0 0 0 0 0 0 0 0
+2013-10-18 23:51:09 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0" 
+2013-10-18 23:51:23 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:51:23 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:51:23 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codfunz,d1desfubr,d1desfudl,d1gennote FROM d1anagfunz
+2013-10-18 23:51:23 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codrepa,d1desrebr,d1desredl,d1codrege,d1gennote FROM d1anagrepa
+2013-10-18 23:51:24 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codrala,d1desrabr,d1desradl,d1gennote FROM d1anagrala
+2013-10-18 23:51:24 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codstgi,d1desstbr,d1desstdl,d1gennote FROM d1anagstgi
+2013-10-18 23:51:27 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:51:27 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:51:27 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-18 23:51:27 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-18 23:51:32 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:51:32 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:51:32 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr   0 0 0 0 0 0 0 0
+2013-10-18 23:51:32 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0" 
+2013-10-18 23:52:18 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:52:18 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:52:18 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codfunz,d1desfubr,d1desfudl,d1gennote FROM d1anagfunz
+2013-10-18 23:52:19 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codrepa,d1desrebr,d1desredl,d1codrege,d1gennote FROM d1anagrepa
+2013-10-18 23:52:19 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codrala,d1desrabr,d1desradl,d1gennote FROM d1anagrala
+2013-10-18 23:52:19 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codstgi,d1desstbr,d1desstdl,d1gennote FROM d1anagstgi
+2013-10-18 23:53:22 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:53:22 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:53:22 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codfunz,d1desfubr,d1desfudl,d1gennote FROM d1anagfunz
+2013-10-18 23:53:23 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codrepa,d1desrebr,d1desredl,d1codrege,d1gennote FROM d1anagrepa
+2013-10-18 23:53:23 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codrala,d1desrabr,d1desradl,d1gennote FROM d1anagrala
+2013-10-18 23:53:23 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codstgi,d1desstbr,d1desstdl,d1gennote FROM d1anagstgi
+2013-10-18 23:55:25 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:55:25 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:55:25 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codfunz,d1desfubr,d1desfudl,d1gennote FROM d1anagfunz
+2013-10-18 23:55:25 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codrepa,d1desrebr,d1desredl,d1codrege,d1gennote FROM d1anagrepa
+2013-10-18 23:55:25 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codrala,d1desrabr,d1desradl,d1gennote FROM d1anagrala
+2013-10-18 23:55:25 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codstgi,d1desstbr,d1desstdl,d1gennote FROM d1anagstgi
+2013-10-18 23:55:32 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:55:32 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:55:32 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc  a    null
+2013-10-18 23:55:32 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%") AND (d1gennome LIKE "%a%"OR"a%")
+2013-10-18 23:55:36 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:55:36 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:55:37 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc  a    null
+2013-10-18 23:55:37 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%") AND (d1gennome LIKE "%a%"OR"a%")
+2013-10-18 23:56:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:56:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:56:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:56:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:56:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - dati inviati al modulo rpc55 66 asdr a F 2013-10-01 zsdfsd4               2013-10-01  1   0 1 0          
+2013-10-18 23:56:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - INSERT INTO d1anagmatr (d1codazie,d1codmatr,d1gencogn,d1gennome,d1gensess,d1datnasc,d1codfis,d1genctre,d1geninre,d1gencpre,d1genprre,d1genfrre,d1genpres,d1genmail,d1datassu,d1datcess,d1codrepa,d1codrege,d1codfunz,d1codstgi,d1codrala,d1codcoec,d1codinec,d1codvar1,d1codvar2,d1codvar3)VALUES (55,66,"asdr","a","F","2013-10-01","zsdfsd4"," "," "," "," "," "," "," ","2013-10-01",null,"1"," ","0","1","0"," "," "," "," "," ")
+2013-10-18 23:56:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "asdr","a","F","2013-10-01","zsdfsd4"," "," "," "," "," "," "," ","2013-10-01",null,"1"," ","0","1","0"," "," "," "," "," "
+2013-10-18 23:56:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - INSERT INTO d1anagmatr (d1codazie,d1codmatr,d1gencogn,d1gennome,d1gensess,d1datnasc,d1codfis,d1genctre,d1geninre,d1gencpre,d1genprre,d1genfrre,d1genpres,d1genmail,d1datassu,d1datcess,d1codrepa,d1codrege,d1codfunz,d1codstgi,d1codrala,d1codcoec,d1codinec,d1codvar1,d1codvar2,d1codvar3)VALUES (55,66,"asdr","a","F","2013-10-01","zsdfsd4"," "," "," "," "," "," "," ","2013-10-01",null,"1"," ","0","1","0"," "," "," "," "," ")
+2013-10-18 23:56:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc  a    null
+2013-10-18 23:56:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%") AND (d1gennome LIKE "%a%"OR"a%")
+2013-10-18 23:56:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:56:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:56:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc  a    null
+2013-10-18 23:56:10 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%") AND (d1gennome LIKE "%a%"OR"a%")
+2013-10-18 23:56:19 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:56:19 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:56:20 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc  a    null
+2013-10-18 23:56:20 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%") AND (d1gennome LIKE "%a%"OR"a%")
+2013-10-18 23:57:15 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:57:15 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:57:15 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr   0 0 0 0 0 0 0 0
+2013-10-18 23:57:15 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0" 
+2013-10-18 23:57:22 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:57:22 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:57:22 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:57:22 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:57:22 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - dati inviati al modulo rpc333 3333   0 0 0 0 0 0 0 0 undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined
+2013-10-18 23:57:22 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - INSERT INTO d1anagfunz(d1codfunz,d1desfubr,d1desfudl,d1gennote) VALUES ("333","3333",null,null)
+2013-10-18 23:57:22 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:57:22 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:57:22 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr   0 0 0 0 0 0 0 0
+2013-10-18 23:57:22 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0" 
+2013-10-18 23:57:22 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr   0 0 0 0 0 0 0 0
+2013-10-18 23:57:22 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0" 
+2013-10-18 23:57:53 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:57:53 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:57:53 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:57:53 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:57:53 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - DELETE FROM d1anagfunz WHERE(d1codfunz="333")
+2013-10-18 23:57:53 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr   0 0 0 0 0 0 0 0
+2013-10-18 23:57:53 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0" 
+2013-10-18 23:57:53 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:57:53 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:57:53 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr   0 0 0 0 0 0 0 0
+2013-10-18 23:57:53 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0" 
+2013-10-18 23:57:58 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:57:58 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:57:58 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:57:58 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:57:58 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - dati inviati al modulo rpc3424 34234234   0 0 0 0 0 0 0 0 undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined
+2013-10-18 23:57:58 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - INSERT INTO d1anagfunz(d1codfunz,d1desfubr,d1desfudl,d1gennote) VALUES ("3424","34234234",null,null)
+2013-10-18 23:57:58 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr   0 0 0 0 0 0 0 0
+2013-10-18 23:57:58 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0" 
+2013-10-18 23:57:58 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:57:58 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:57:59 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr   0 0 0 0 0 0 0 0
+2013-10-18 23:57:59 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0" 
+2013-10-18 23:58:02 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:58:02 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:58:02 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:58:02 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:58:02 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr   0 0 0 0 0 0 0 0
+2013-10-18 23:58:02 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0" 
+2013-10-18 23:58:02 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - DELETE FROM d1anagfunz WHERE(d1codfunz="3424")
+2013-10-18 23:58:02 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:58:02 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:58:02 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr   0 0 0 0 0 0 0 0
+2013-10-18 23:58:02 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0" 
+2013-10-18 23:58:17 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:58:17 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:58:17 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:58:17 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:58:17 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - UPDATE d1anagfunz SET d1desfubr="test3",d1desfudl="descrizione estesa2",d1gennote="note" WHERE d1codfunz="3"
+2013-10-18 23:58:17 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - UPDATE d1anagfunz SET d1desfubr="test3",d1desfudl="descrizione estesa2",d1gennote="note" WHERE d1codfunz="3"
+2013-10-18 23:58:17 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr   0 0 0 0 0 0 0 0
+2013-10-18 23:58:17 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0" 
+2013-10-18 23:58:17 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:58:17 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:58:17 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr   0 0 0 0 0 0 0 0
+2013-10-18 23:58:17 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0" 
+2013-10-18 23:58:27 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:58:27 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:58:27 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codfunz,d1desfubr,d1desfudl,d1gennote FROM d1anagfunz
+2013-10-18 23:58:27 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codrepa,d1desrebr,d1desredl,d1codrege,d1gennote FROM d1anagrepa
+2013-10-18 23:58:27 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codrala,d1desrabr,d1desradl,d1gennote FROM d1anagrala
+2013-10-18 23:58:27 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codstgi,d1desstbr,d1desstdl,d1gennote FROM d1anagstgi
+2013-10-18 23:58:29 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:58:29 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:58:29 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-18 23:58:29 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-18 23:58:32 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:58:32 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:58:32 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:58:32 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:58:33 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - UPDATE d1anagmatr SET d1gennome="asa",d1gencogn="asdr",d1gensess="F",d1datnasc="2013-10-01",d1codfis="zsdfsd4",d1genctre=" ",d1geninre=" ",d1gencpre=" ",d1genprre=" ",d1genfrre=" ",d1genpres=" ",d1genmail=" ",d1datassu="2013-10-01",d1datcess=null,d1codrepa="1",d1codrege=" ",d1codfunz="0",d1codstgi="1",d1codrala="0",d1codcoec=" ",d1codinec=" ",d1codvar1=" ",d1codvar2=" ",d1codvar3=" " WHERE d1codmatr=66 AND d1codazie=55
+2013-10-18 23:58:33 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - UPDATE d1anagmatr SET d1gennome="asa",d1gencogn="asdr",d1gensess="F",d1datnasc="2013-10-01",d1codfis="zsdfsd4",d1genctre=" ",d1geninre=" ",d1gencpre=" ",d1genprre=" ",d1genfrre=" ",d1genpres=" ",d1genmail=" ",d1datassu="2013-10-01",d1datcess=null,d1codrepa="1",d1codrege=" ",d1codfunz="0",d1codstgi="1",d1codrala="0",d1codcoec=" ",d1codinec=" ",d1codvar1=" ",d1codvar2=" ",d1codvar3=" " WHERE d1codmatr=66 AND d1codazie=55
+2013-10-18 23:58:33 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:58:33 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:58:33 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-18 23:58:33 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-18 23:58:33 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-18 23:58:33 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-18 23:58:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:58:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:58:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:58:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:58:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - UPDATE d1anagmatr SET d1gennome="asdada",d1gencogn="sdads",d1gensess="M",d1datnasc="2013-10-01",d1codfis="sdasd4",d1genctre=" ",d1geninre=" ",d1gencpre=" ",d1genprre=" ",d1genfrre=" ",d1genpres=" ",d1genmail=" ",d1datassu="2013-10-01",d1datcess=null,d1codrepa="0",d1codrege=" ",d1codfunz="3",d1codstgi="0",d1codrala="0",d1codcoec=" ",d1codinec=" ",d1codvar1=" ",d1codvar2=" ",d1codvar3=" " WHERE d1codmatr=3535 AND d1codazie=3434
+2013-10-18 23:58:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - UPDATE d1anagmatr SET d1gennome="asdada",d1gencogn="sdads",d1gensess="M",d1datnasc="2013-10-01",d1codfis="sdasd4",d1genctre=" ",d1geninre=" ",d1gencpre=" ",d1genprre=" ",d1genfrre=" ",d1genpres=" ",d1genmail=" ",d1datassu="2013-10-01",d1datcess=null,d1codrepa="0",d1codrege=" ",d1codfunz="3",d1codstgi="0",d1codrala="0",d1codcoec=" ",d1codinec=" ",d1codvar1=" ",d1codvar2=" ",d1codvar3=" " WHERE d1codmatr=3535 AND d1codazie=3434
+2013-10-18 23:58:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-18 23:58:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-18 23:58:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:58:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:58:41 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-18 23:58:41 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-18 23:59:04 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:59:04 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:59:05 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:59:05 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:59:05 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - dati inviati al modulo rpc3445 55 ffff asdffff M 2013-10-01 asdasdf               2013-10-01  0   0 0 0          
+2013-10-18 23:59:05 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - INSERT INTO d1anagmatr (d1codazie,d1codmatr,d1gencogn,d1gennome,d1gensess,d1datnasc,d1codfis,d1genctre,d1geninre,d1gencpre,d1genprre,d1genfrre,d1genpres,d1genmail,d1datassu,d1datcess,d1codrepa,d1codrege,d1codfunz,d1codstgi,d1codrala,d1codcoec,d1codinec,d1codvar1,d1codvar2,d1codvar3)VALUES (3445,55,"ffff","asdffff","M","2013-10-01","asdasdf"," "," "," "," "," "," "," ","2013-10-01",null,"0"," ","0","0","0"," "," "," "," "," ")
+2013-10-18 23:59:05 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "ffff","asdffff","M","2013-10-01","asdasdf"," "," "," "," "," "," "," ","2013-10-01",null,"0"," ","0","0","0"," "," "," "," "," "
+2013-10-18 23:59:05 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - INSERT INTO d1anagmatr (d1codazie,d1codmatr,d1gencogn,d1gennome,d1gensess,d1datnasc,d1codfis,d1genctre,d1geninre,d1gencpre,d1genprre,d1genfrre,d1genpres,d1genmail,d1datassu,d1datcess,d1codrepa,d1codrege,d1codfunz,d1codstgi,d1codrala,d1codcoec,d1codinec,d1codvar1,d1codvar2,d1codvar3)VALUES (3445,55,"ffff","asdffff","M","2013-10-01","asdasdf"," "," "," "," "," "," "," ","2013-10-01",null,"0"," ","0","0","0"," "," "," "," "," ")
+2013-10-18 23:59:05 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-18 23:59:05 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-18 23:59:05 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:59:05 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:59:05 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-18 23:59:05 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-18 23:59:29 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:59:29 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:59:29 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagfunz d1codfunz d1desfubr   0 0 0 0 0 0 0 0
+2013-10-18 23:59:29 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagfunz WHERE d1codfunz!="0" 
+2013-10-18 23:59:31 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:59:31 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:59:31 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codfunz,d1desfubr,d1desfudl,d1gennote FROM d1anagfunz
+2013-10-18 23:59:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:59:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:59:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:59:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:59:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - UPDATE d1anagmatr SET d1gennome="asdffff",d1gencogn="ffff",d1gensess="M",d1datnasc="2013-10-01",d1codfis="asdasdf",d1genctre=" ",d1geninre=" ",d1gencpre=" ",d1genprre=" ",d1genfrre="ddd",d1genpres=" ",d1genmail=" ",d1datassu="2013-10-01",d1datcess=null,d1codrepa="0",d1codrege=" ",d1codfunz="3",d1codstgi="0",d1codrala="0",d1codcoec=" ",d1codinec=" ",d1codvar1=" ",d1codvar2=" ",d1codvar3=" " WHERE d1codmatr=55 AND d1codazie=3445
+2013-10-18 23:59:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - UPDATE d1anagmatr SET d1gennome="asdffff",d1gencogn="ffff",d1gensess="M",d1datnasc="2013-10-01",d1codfis="asdasdf",d1genctre=" ",d1geninre=" ",d1gencpre=" ",d1genprre=" ",d1genfrre="ddd",d1genpres=" ",d1genmail=" ",d1datassu="2013-10-01",d1datcess=null,d1codrepa="0",d1codrege=" ",d1codfunz="3",d1codstgi="0",d1codrala="0",d1codcoec=" ",d1codinec=" ",d1codvar1=" ",d1codvar2=" ",d1codvar3=" " WHERE d1codmatr=55 AND d1codazie=3445
+2013-10-18 23:59:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-18 23:59:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-18 23:59:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:59:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:59:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-18 23:59:40 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-18 23:59:49 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:59:49 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:59:49 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-18 23:59:49 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-18 23:59:51 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-18 23:59:51 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-18 23:59:51 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-18 23:59:51 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-18 23:59:58 [com.wakanda-software] INFO - Stops "7 Day" solution
+2013-10-18 23:59:59 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project stopped
+2013-10-19 00:00:01 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project stopped
+2013-10-19 00:00:01 [com.wakanda-software.7 Day] INFO - "7 Day" solution stopped
+2013-10-19 00:00:01 [com.wakanda-software] INFO - Closes "7 Day" solution
+2013-10-19 00:00:01 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project closed
+2013-10-19 00:00:01 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project closed
+2013-10-19 00:00:01 [com.wakanda-software.7 Day] INFO - "7 Day" solution closed

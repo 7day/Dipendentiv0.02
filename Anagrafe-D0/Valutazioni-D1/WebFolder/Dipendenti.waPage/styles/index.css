@@ -3,94 +3,6 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#img7 {
-	 z-index: 0;
-	 width: 0px;
-	 height: 0px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#img6 {
-	 z-index: 0;
-	 width: 0px;
-	 height: 0px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#img5 {
-	 z-index: 0;
-	 width: 0px;
-	 height: 0px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#img4 {
-	 z-index: 0;
-	 width: 0px;
-	 height: 0px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#img3 {
-	 z-index: 0;
-	 width: 0px;
-	 height: 0px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#img2 {
-	 z-index: 0;
-	 width: 0px;
-	 height: 0px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#img1 {
-	 z-index: 0;
-	 width: 0px;
-	 height: 0px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#img {
-	 z-index: 0;
-	 width: 0px;
-	 height: 0px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
 .waf-combobox-list-d1desrabr {
 	 border-top-color: rgb(170, 155, 145);
 	 border-left-color: rgb(170, 155, 145);
@@ -1163,8 +1075,8 @@
 
 #label38 {
 	 width: 100px;
-	 height: 15px;
-	 top: 86.5px;
+	 height: 16px;
+	 top: 86px;
 	 left: 11px;
 	
 	 position: absolute;
@@ -1175,8 +1087,8 @@
 
 #label37 {
 	 width: 100px;
-	 height: 15px;
-	 top: 53.5px;
+	 height: 16px;
+	 top: 53px;
 	 left: 12px;
 	
 	 position: absolute;
@@ -1187,8 +1099,8 @@
 
 #label35 {
 	 width: 100px;
-	 height: 15px;
-	 top: 20.5px;
+	 height: 16px;
+	 top: 20px;
 	 left: 12px;
 	
 	 position: absolute;
@@ -1199,8 +1111,8 @@
 
 #label6 {
 	 width: 100px;
-	 height: 15px;
-	 top: 20.5px;
+	 height: 16px;
+	 top: 20px;
 	 left: 283px;
 	
 	 position: absolute;
@@ -1209,8 +1121,8 @@
 
 #label8 {
 	 width: 100px;
-	 height: 15px;
-	 top: 53.5px;
+	 height: 16px;
+	 top: 53px;
 	 left: 283px;
 	
 	 position: absolute;
@@ -1221,8 +1133,8 @@
 
 #label7 {
 	 width: 100px;
-	 height: 15px;
-	 top: 86.5px;
+	 height: 16px;
+	 top: 86px;
 	 left: 283px;
 	
 	 position: absolute;
@@ -1929,9 +1841,6 @@
 	 border-left-width: 0px;
 	 border-right-width: 0px;
 	 border-bottom-width: 0px;
-	 -webkit-box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(0, 0, 0, 0) 1px 1px 2px 0px;
-	 -moz-box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(0, 0, 0, 0) 1px 1px 2px 0px;
-	 box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(0, 0, 0, 0) 1px 1px 2px 0px;
 	
 	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIwIiB5Mj0iMTAwJSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZmZmZiIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIwIiAvPjxzdG9wIHN0b3AtY29sb3I9IiNmZmZmZmYiIG9mZnNldD0iMTAwJSIgc3RvcC1vcGFjaXR5PSIwIiAvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN3YWYtaWUtZ3JhZGllbnQpIiAvPjwvc3ZnPg==");
 	 background-image:-webkit-gradient(linear,0% 0%, 0% 100%,color-stop(0, rgba(255, 255, 255, 0)),color-stop(1, rgba(255, 255, 255, 0)));
@@ -1940,6 +1849,9 @@
 	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
+	 -webkit-box-shadow: transparent 0px 0px 0px 0px inset, rgba(0, 0, 0, 0) 1px 1px 2px 0px;
+	 -moz-box-shadow: transparent 0px 0px 0px 0px inset, rgba(0, 0, 0, 0) 1px 1px 2px 0px;
+	 box-shadow: transparent 0px 0px 0px 0px inset, rgba(0, 0, 0, 0) 1px 1px 2px 0px;
 	 
 }
 
