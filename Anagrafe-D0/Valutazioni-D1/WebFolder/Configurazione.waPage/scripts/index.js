@@ -247,7 +247,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	d1gendb.blur = function d1gendb_blur (event)// @startlock
 	{// @endlock
-		if (isAllAlfaNum(this.getValue(),true)!=true){
+		if (this.getValue()!="" && isAllAlfaNum(this.getValue(),true)!=true){
 			alert("questo campo non accetta caratteri speciali");
 			this.setValue("");
 			this.focus();
@@ -256,7 +256,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	d1genhost.blur = function d1genhost_blur (event)// @startlock
 	{// @endlock
-		if (isAllAlfaNum(this.getValue(),true)!=true){
+		if (this.getValue()!="" && isAllAlfaNum(this.getValue(),true)!=true){
 			alert("questo campo non accetta caratteri speciali");
 			this.setValue("");
 			this.focus();
@@ -288,7 +288,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	d1genuser.blur = function d1genuser_blur (event)// @startlock
 	{// @endlock
-		if (isAllAlfaNum(this.getValue(),true)!=true){
+		if (this.getValue()!="" && isAllAlfaNum(this.getValue(),true)!=true){
 			alert("questo campo non accetta caratteri speciali");
 			this.setValue("");
 			this.focus();
@@ -311,15 +311,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		chkLocazioneBlur(this);
 	};// @lock
 	
-
-	d1genprov.keyup = function d1genprov_keyup (event)// @startlock
-	{// @endlock
-		if (isAllAlfa(this.getValue(),true)!=true){
-			alert("questo campo accetta solo lettere");
-			this.setValue("");
-			this.focus(true);
-		}
-	};// @lock
 
 	$("#d1genrags").keypress(function (e)
      {
@@ -479,7 +470,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	WAF.addListener("d1gencitt", "blur", d1gencitt.blur, "WAF");
 	WAF.addListener("d1genindi", "blur", d1genindi.blur, "WAF");
 	WAF.addListener("d1genrags", "blur", d1genrags.blur, "WAF");
-	WAF.addListener("d1genprov", "keyup", d1genprov.keyup, "WAF");
 	WAF.addListener("document", "onLoad", documentEvent.onLoad, "WAF");
 // @endregion
 };// @endlock

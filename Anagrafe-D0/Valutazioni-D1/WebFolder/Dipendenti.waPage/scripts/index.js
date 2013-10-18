@@ -577,16 +577,12 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				        },  
 				       'onError': function (error) {
 				                   CheckDB();
-				                   
-				                  //$$('ConfermaDati').setErrorMessage({Error:300,message: "prova"/*,tooltip:true*/})
-				                   alert('operazione non riusciuta dati non corretti');
-				                   console.log(error);
-				                   
+				                   alert('operazione non riusciuta dati non corretti? ')
+				                   console.log("errore dati inseriti non corretti");
 				        },  
 				        'params': [connectionParams,tabella,P_d1codazie,P_d1codmatr,P_d1gencogn,P_d1gennome,P_d1gensess,P_d1datnasc,P_d1codfis,P_d1genctre,P_d1geninre,P_d1gencpre,P_d1genprre,P_d1genfrre,P_d1genpres,P_d1genmail,P_d1datassu,P_d1datcess,P_d1codrepa,P_d1codrege,P_d1codfunz,P_d1codstgi,P_d1codrala,P_d1codcoec,P_d1codinec,P_d1codvar1,P_d1codvar2,P_d1codvar3]
 				        });
-				}
-				
+				} 
 				Ricerca("anagrafica");  		
 				StrToDate();
 				source.anagrafe.orderBy("d1codazie asc");
@@ -873,10 +869,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 			}
 		}
 	}
-	
-
-	
-	
 	
 	function CheckDB(){
 		try {

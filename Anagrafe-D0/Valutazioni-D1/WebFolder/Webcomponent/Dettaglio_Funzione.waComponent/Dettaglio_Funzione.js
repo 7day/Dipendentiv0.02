@@ -75,22 +75,18 @@ function constructor (id) {
 		} 
 	};// @lock
 	
-	$("#component1_d1codfunz").keypress(function (e)
-     {
-     //if the letter is not numeric then display error and don't type anything
-     if( e.which>=32 && (e.which<48 || e.which>57))
-     {
-	     return false;
-	  }else{
-	  	   return true;
-	  }
-     });
-
 	d1codfunz.blur = function d1codfunz_blur (event)// @startlock
 	{// @endlock
-		if (isAllDigit(this.getValue())!=true){
-			alert("questo campo accetta solo numeri");
-			this.focus();
+		if (this.getValue()=="0"){
+			console.log("zero");
+		  	alert("il campo non accetta 0");
+		  	this.focus();
+		}else{
+			if (this.getValue()!="" && isAllAlfaNum(this.getValue(),true)!=true){
+				alert("questo campo non accetta caratteri speciali");
+				this.setValue("");
+				this.focus();
+			}
 		}
 	};// @lock
 
@@ -119,10 +115,6 @@ function constructor (id) {
 		
 	};// @lock
 	
-	d1desfubr.focus = function d1desfubr_focus (event)// @startlock
-	{// @endlock
-		chkIndDescBlur(this);
-	};// @lock
 
 	d1desfubr.blur = function d1desfubr_blur (event)// @startlock
 	{// @endlock
@@ -218,9 +210,7 @@ function constructor (id) {
 		}else{
 			alert("inserisci i campi obbligatori");	
 		}
-	           
-			
-			
+	           	
 	};// @lock
 
 	// @region eventManager// @startlock
@@ -228,7 +218,6 @@ function constructor (id) {
 	WAF.addListener(this.id + "_Eli_mans", "click", Eli_mans.click, "WAF");
 	WAF.addListener(this.id + "_d1gennote", "focus", d1gennote.focus, "WAF");
 	WAF.addListener(this.id + "_d1desfudl", "focus", d1desfudl.focus, "WAF");
-	WAF.addListener(this.id + "_d1desfubr", "focus", d1desfubr.focus, "WAF");
 	WAF.addListener(this.id + "_d1codfunz", "blur", d1codfunz.blur, "WAF");
 	WAF.addListener(this.id + "_d1desfudl", "blur", d1desfudl.blur, "WAF");
 	WAF.addListener(this.id + "_d1gennote", "blur", d1gennote.blur, "WAF");

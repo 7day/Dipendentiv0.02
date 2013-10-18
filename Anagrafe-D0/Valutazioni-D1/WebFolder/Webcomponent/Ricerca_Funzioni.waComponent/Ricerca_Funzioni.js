@@ -43,22 +43,14 @@ function constructor (id) {
 		}
 	};// @lock
 	
-	$("#component3_search_d1codfunz").keypress(function (e)
-     {
-     //if the letter is not char then display error and don't type anything
-     if( e.which>=32 && (e.which<48 || e.which>57))
-     {
-	     return false;
-	  }else{
-	  	   return true;
-	  }
-     });
-     
 
 	search_d1codfunz.blur = function search_d1codfunz_blur (event)// @startlock
 	{// @endlock
-		chkCapBlur(this);
-		
+		if (this.getValue()!="" && isAllAlfaNum(this.getValue(),true)!=true){
+			alert("questo campo non accetta caratteri speciali");
+			this.setValue("");
+			this.focus();
+		}
 	};// @lock
 	
 
@@ -73,10 +65,6 @@ function constructor (id) {
 		}
 	};// @lock
 	
-	search_d1desfubr.focus = function search_d1desfubr_focus (event)// @startlock
-	{// @endlock
-		chkIndDescBlur(this);
-	};// @lock
 
 	search_d1desfubr.blur = function search_d1desfubr_blur (event)// @startlock
 	{// @endlock
@@ -95,10 +83,8 @@ function constructor (id) {
 	{// @endlock
 		if(modalita!="lettura"){
 			data.userData=sources.mansioni3.getCurrentElement();
-			
 			$$("tabView3").selectTab(2);
 			$$('component1').loadComponent({path: '/Webcomponent/Dettaglio_Funzione.waComponent', userData:  { 'dati':data.userData,'modalita': 'update','cur':sources.mansioni3.getCurrentElement() }});
-			
 		}
 	};// @lock
 
@@ -187,7 +173,6 @@ function constructor (id) {
 	WAF.addListener(this.id + "_search_d1codfunz", "keydown", search_d1codfunz.keydown, "WAF");
 	WAF.addListener(this.id + "_search_d1desfubr", "keydown", search_d1desfubr.keydown, "WAF");
 	WAF.addListener(this.id + "_search_d1codfunz", "blur", search_d1codfunz.blur, "WAF");
-	WAF.addListener(this.id + "_search_d1desfubr", "focus", search_d1desfubr.focus, "WAF");
 	WAF.addListener(this.id + "_search_d1desfubr", "blur", search_d1desfubr.blur, "WAF");
 	WAF.addListener(this.id + "_dataGrid1", "onRowClick", dataGrid1.onRowClick, "WAF");
 	WAF.addListener(this.id + "_dataGrid1", "onRowDblClick", dataGrid1.onRowDblClick, "WAF");

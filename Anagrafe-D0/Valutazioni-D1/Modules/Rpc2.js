@@ -153,7 +153,7 @@ exports.insert = function(connectionParams,tabella,d1codazie,d1codmatr,d1gencogn
 				campi+=',' +'"' +d1gennome+'"';
 			}
 	
-			dbquery = 'INSERT INTO d1anagfunz(d1codfunz,d1desfubr,d1desfudl,d1gennote) VALUES ('+d1codazie+','+campi+')';
+			dbquery = 'INSERT INTO d1anagfunz(d1codfunz,d1desfubr,d1desfudl,d1gennote) VALUES ('+'"'+d1codazie+'"'+','+campi+')';
 		}
 		 
 		console.log(dbquery);
@@ -340,6 +340,8 @@ exports.insert = function(connectionParams,tabella,d1codazie,d1codmatr,d1gencogn
 			}else{
 				d1gennome='"' +d1gennome+'"';
 			}
+			
+			
 			dbquery = 'UPDATE d1anagfunz SET d1desfubr='+d1codmatr+','+'d1desfudl='+d1gencogn+','+'d1gennote='+d1gennome+' WHERE d1codfunz='+'"'+d1codazie+'"';
 			console.log(dbquery);
 		}
@@ -522,14 +524,15 @@ exports.del = function(connectionParams,tabella,id,id2)
 		
 		if (campo2==''){
 			if (campo3!=''){
-				dbquery+=' WHERE ('+campo1+' LIKE '+'"'+"%"+campo3+"%"+'"'+'OR'+'"'+"%"+campo3+'"'+'OR'+'"'+campo3+"%"+'"'+')';
+				//SELECT * FROM d1anagfunz WHERE d1codfunz LIKE "%5%" OR d1codfunz LIKE "5%" ;
+				dbquery+=' WHERE ('+campo1+' LIKE '+'"'+"%"+campo3+"%"+'"'+' OR '+campo1+' LIKE '+'"'+"%"+campo3+'"'+' OR '+campo1+' LIKE '+'"'+campo3+"%"+'"'+')';
 			}else{
 				dbquery="";
 			}
 		}else{
-			dbquery+=' WHERE ('+campo0+'='+campo2+')';
+			dbquery+=' WHERE ('+campo0+' LIKE '+'"'+"%"+campo2+"%"+'"'+' OR '+campo0+' LIKE '+'"'+"%"+campo2+'"'+' OR '+campo0+' LIKE '+'"'+campo2+"%"+'"'+')';
 			if (campo3!=''){
-				dbquery+=' OR ('+campo1+' LIKE '+'"'+"%"+campo3+"%"+'"'+'OR'+'"'+"%"+campo3+'"'+'OR'+'"'+campo3+"%"+'"'+')';
+				dbquery+=' OR ('+campo1+' LIKE '+'"'+"%"+campo3+"%"+'"'+' OR '+campo1+' LIKE '+'"'+"%"+campo3+'"'+' OR '+campo1+' LIKE '+'"'+campo3+"%"+'"'+')';
 			}
 		}
 	}	
