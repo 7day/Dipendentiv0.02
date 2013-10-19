@@ -52,6 +52,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	 		 
 	
 // @region namespaceDeclaration// @startlock
+	var d1gennome = {};	// @textField
 	var Drop_Dati = {};	// @buttonImage
 	var imageButton1 = {};	// @buttonImage
 	var d1codcoec = {};	// @textField
@@ -89,6 +90,20 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 // @endregion// @endlock
 
 // eventHandlers// @lock
+$("#d1gennome").keypress(function (e)
+     {
+     //if the letter is not char then display error and don't type anything
+     if( e.which>=32 && (e.which<48 || e.which>57))
+     {
+	     return true;
+	  }else{
+	  	   return false;
+	  }
+     });
+	d1gennome.blur = function d1gennome_blur (event)// @startlock
+	{// @endlock
+		chkLocazioneBlur(this);
+	};// @lock
 
 	Drop_Dati.click = function Drop_Dati_click (event)// @startlock
 	{// @endlock
@@ -326,17 +341,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		chkLocazioneBlur(this);
 	};// @lock
 	
-  
-  	$("#d1gennome").keypress(function (e)
-     {
-     //if the letter is not char then display error and don't type anything
-     if( e.which>=32 && (e.which<48 || e.which>57))
-     {
-	     return true;
-	  }else{
-	  	   return false;
-	  }
-     });
 	
 	$("#d1codmatr").keypress(function (e)
      {
@@ -887,6 +891,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
    
 // @region eventManager// @startlock
+	WAF.addListener("d1gennome", "blur", d1gennome.blur, "WAF");
 	WAF.addListener("Drop_Dati", "click", Drop_Dati.click, "WAF");
 	WAF.addListener("imageButton1", "click", imageButton1.click, "WAF");
 	WAF.addListener("search_d1codfis", "keydown", search_d1codfis.keydown, "WAF");

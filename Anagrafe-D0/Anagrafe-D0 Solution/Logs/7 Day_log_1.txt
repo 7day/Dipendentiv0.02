@@ -2919,3 +2919,54 @@
 2013-10-19 00:00:01 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project closed
 2013-10-19 00:00:01 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project closed
 2013-10-19 00:00:01 [com.wakanda-software.7 Day] INFO - "7 Day" solution closed
+2013-10-19 07:19:20 [com.wakanda-software] INFO - Opens the solution "C:\Users\Sviluppatore\Documents\GitHub\Dipendentiv0.02\Anagrafe-D0\Anagrafe-D0 Solution\7 Day.waSolution" for running
+2013-10-19 07:19:20 [com.wakanda-software.7 Day] INFO - Users and groups directory opened
+2013-10-19 07:19:20 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - Datastore opened
+2013-10-19 07:19:20 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project opened
+2013-10-19 07:19:20 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project opened
+2013-10-19 07:19:20 [com.wakanda-software.7 Day] INFO - "7 Day" solution opened
+2013-10-19 07:19:20 [com.wakanda-software] INFO - Starts "7 Day" solution
+2013-10-19 07:19:21 [com.wakanda-software.7 Day.ServerAdmin] INFO - HTTP Server started
+2013-10-19 07:19:21 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project started
+2013-10-19 07:19:21 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - HTTP Server started
+2013-10-19 07:19:21 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project started
+2013-10-19 07:19:21 [com.wakanda-software.7 Day.ServerAdmin] INFO - Executes the bootstrap file(s)
+2013-10-19 07:19:21 [com.wakanda-software.7 Day.ServerAdmin] INFO - Bootstrap file(s) executed
+2013-10-19 07:19:21 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - Executes the bootstrap file(s)
+2013-10-19 07:19:21 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - Bootstrap file(s) executed
+2013-10-19 07:19:21 [com.wakanda-software.7 Day] INFO - "7 Day" solution started
+2013-10-19 07:19:21 [com.wakanda-software] INFO - "7 Day" solution has been successfully opened for running (duration: 949 ms)
+2013-10-19 07:28:09 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-19 07:28:09 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-19 07:28:09 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codfunz,d1desfubr,d1desfudl,d1gennote FROM d1anagfunz
+2013-10-19 07:28:09 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codrepa,d1desrebr,d1desredl,d1codrege,d1gennote FROM d1anagrepa
+2013-10-19 07:28:09 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codrala,d1desrabr,d1desradl,d1gennote FROM d1anagrala
+2013-10-19 07:28:09 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codstgi,d1desstbr,d1desstdl,d1gennote FROM d1anagstgi
+2013-10-19 07:28:22 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-19 07:28:22 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-19 07:28:22 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-19 07:28:22 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-19 07:29:32 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-19 07:29:32 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-19 07:29:32 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codfunz,d1desfubr,d1desfudl,d1gennote FROM d1anagfunz
+2013-10-19 07:29:32 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codrepa,d1desrebr,d1desredl,d1codrege,d1gennote FROM d1anagrepa
+2013-10-19 07:29:32 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codrala,d1desrabr,d1desradl,d1gennote FROM d1anagrala
+2013-10-19 07:29:33 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codstgi,d1desstbr,d1desstdl,d1gennote FROM d1anagstgi
+2013-10-19 07:30:23 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-19 07:30:23 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-19 07:30:23 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codfunz,d1desfubr,d1desfudl,d1gennote FROM d1anagfunz
+2013-10-19 07:30:24 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codrepa,d1desrebr,d1desredl,d1codrege,d1gennote FROM d1anagrepa
+2013-10-19 07:30:24 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codrala,d1desrabr,d1desradl,d1gennote FROM d1anagrala
+2013-10-19 07:30:24 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT d1codstgi,d1desstbr,d1desstdl,d1gennote FROM d1anagstgi
+2013-10-19 07:30:25 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - connetti a 
+2013-10-19 07:30:25 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false}
+2013-10-19 07:30:25 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - {"hostname":"localhost","port":3306,"user":"7day","password":"7day","database":"D1Valutazioni","charSet":192,"ssl":false} d1anagmatr d1gencogn d1gennome d1genmail d1genctre d1codfis d1datnasc      null
+2013-10-19 07:30:25 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - SELECT * FROM d1anagmatr WHERE (d1gencogn LIKE "%%"OR"%")
+2013-10-19 07:31:54 [com.wakanda-software] INFO - Stops "7 Day" solution
+2013-10-19 07:31:55 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project stopped
+2013-10-19 07:31:56 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project stopped
+2013-10-19 07:31:56 [com.wakanda-software.7 Day] INFO - "7 Day" solution stopped
+2013-10-19 07:31:56 [com.wakanda-software] INFO - Closes "7 Day" solution
+2013-10-19 07:31:56 [com.wakanda-software.7 Day.Valutazioni-D1] INFO - "Valutazioni-D1" project closed
+2013-10-19 07:31:56 [com.wakanda-software.7 Day.ServerAdmin] INFO - "ServerAdmin" project closed
+2013-10-19 07:31:57 [com.wakanda-software.7 Day] INFO - "7 Day" solution closed
